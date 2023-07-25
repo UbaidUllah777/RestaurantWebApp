@@ -52,18 +52,23 @@ const ContactUsClassicPage = (props) => {
     <div style={props.style}>
  
       {/* Parallax Scrolling Start */}
-      <m.div className="md:flex md:items-center overflow-hidden relative md:h-[465px] sm:h-[350px] xs:h-[357px]" {...fadeIn}>
-        <Parallax className="lg-no-parallax bg-cover cover-background absolute left-0 h-[120vh] top-[60px] lg:h-[64vh] lg:top-[-46px] lg:!translate-y-0 md:h-[60vh] md:-top-[30px] sm:top-[-44px] sm:h-[49vh] xs:top-0 xs:h-[40vh] w-full" translateY={[-40, 40]} style={{ backgroundImage: `url(/assets/img/contactUs/contactBanner.jpg)` }}></Parallax>
-        <div className="absolute h-full w-full opacity-75 top-0 left-0 bg-gradient-to-tr from-[#0039e3] via-[#5e28dd] to-[#8600d4]"></div>
-        <Container className="h-full relative">
-          <Row className="justify-center h-full">
-            <Col xl={6} lg={7} md={10} className="text-center flex h-[560px] lg:h-[480px] md:h-[450px] sm:h-[350px] justify-center flex-col font-serif">
-              <span className="inline-block opacity-60 mb-[5px] text-white">Unlimited customization possibilities</span>
-              <h1 className="text-white text-[42px] leading-[49px] sm:text-[30px] sm:leading-10 font-medium mb-0">Contact us classic</h1>
+     {/* Parallax Scrolling Start */}
+     <div id="parallax-section" className="full-screen md:flex md:items-center landscape:md:h-[600px] overflow-hidden relative">
+        <Parallax className="lg-no-parallax bg-cover absolute top-[0px] left-0 md:-top-[30px] w-full h-[100vh]" translateY={[-40, 40]} style={{ backgroundImage: `url(/assets/img/contactUs/contactBanner.jpg)` }}></Parallax>
+        <div className="absolute h-full w-full opacity-60 top-0 left-0 bg-darkgray"></div>
+        <Container className="relative h-full">
+          <Row className="justify-center items-center h-full">
+            <Col xl={8} md={10} lg={8} className="flex-col flex justify-center text-center h-[600px]">
+              <div className="border-[#ca943d66] border-[8px] py-[7.5rem] px-[6.5rem] lg:p-[4.5rem] xs:p-8">
+                <i className="line-icon-French-Fries text-[70px] inline-block leading-[80px] text-[#ca943d] mb-[3.5rem]"></i>
+                <h1 className="text-[50px] leading-[95px] font-serif font-semibold text-white  -tracking-[4px] mb-[3.5rem] mx-auto lg:text-[50px] lg:leading-[50px] md:text-[50px] md:leading-[65px] sm:text-[45px] sm:leading-[43px] sm:-tracking-[1px]">Contact Us</h1>
+                 </div>
             </Col>
           </Row>
+         
         </Container>
-      </m.div>
+      </div>
+      {/* Parallax Scrolling End */}
       {/* Parallax Scrolling End */}
 
       
