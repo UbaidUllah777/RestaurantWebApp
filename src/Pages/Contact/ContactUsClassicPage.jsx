@@ -41,6 +41,10 @@ const SocialIconsData = [
   },
 ]
 
+//images
+
+// import contactBannerImg from "../../../public/assets/img/contactUs/contactBanner.jpg"
+
 
 const ContactUsClassicPage = (props) => {
   const form = useRef(null)
@@ -49,7 +53,7 @@ const ContactUsClassicPage = (props) => {
  
       {/* Parallax Scrolling Start */}
       <m.div className="md:flex md:items-center overflow-hidden relative md:h-[465px] sm:h-[350px] xs:h-[357px]" {...fadeIn}>
-        <Parallax className="lg-no-parallax bg-cover cover-background absolute left-0 h-[120vh] top-[60px] lg:h-[64vh] lg:top-[-46px] lg:!translate-y-0 md:h-[60vh] md:-top-[30px] sm:top-[-44px] sm:h-[49vh] xs:top-0 xs:h-[40vh] w-full" translateY={[-40, 40]} style={{ backgroundImage: `url(https://via.placeholder.com/1920x1100)` }}></Parallax>
+        <Parallax className="lg-no-parallax bg-cover cover-background absolute left-0 h-[120vh] top-[60px] lg:h-[64vh] lg:top-[-46px] lg:!translate-y-0 md:h-[60vh] md:-top-[30px] sm:top-[-44px] sm:h-[49vh] xs:top-0 xs:h-[40vh] w-full" translateY={[-40, 40]} style={{ backgroundImage: `url(/assets/img/contactUs/contactBanner.jpg)` }}></Parallax>
         <div className="absolute h-full w-full opacity-75 top-0 left-0 bg-gradient-to-tr from-[#0039e3] via-[#5e28dd] to-[#8600d4]"></div>
         <Container className="h-full relative">
           <Row className="justify-center h-full">

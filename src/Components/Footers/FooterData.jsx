@@ -3,12 +3,12 @@ const FooterData = [
         title: "company",
         submenu: [
             {
-                title: "About company",
-                link: "/page/about-us"
+                title: "About Suraj Bawa Restaurant",
+                link: "/about-us"
             },
             {
-                title: "Company services",
-                link: "/page/our-services"
+                title: "Full Menu",
+                link: "/menu"
             },
             {
                 title: "Job opportunities",
