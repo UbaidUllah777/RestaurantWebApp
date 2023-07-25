@@ -784,7 +784,7 @@ export const HeaderCart = (props) => {
     <div className={`header-cart-icon dropdown mr-[10px] inline-block align-middle pl-[17px] text-[17px]${props.className ? ` ${props.className}` : ""}`} style={props.style}>
       <Link aria-label="link" to="#" className="relative inline-block">
         <i className={`feather-shopping-bag px-0 py-[30px] inline-block ${props.className}`} ></i>
-        <span className="cart-count font-serif bg-basecolor text-white absolute top-[20px] right-[-10px] w-[16px] h-[16px] text-center text-[9px] leading-[16px] rounded-full">
+        <span className="cart-count font-serif bg-darkgray text-white absolute top-[20px] right-[-10px] w-[16px] h-[16px] text-center text-[10px] leading-[16px] rounded-full">
           2
         </span>
       </Link>
@@ -797,8 +797,8 @@ export const HeaderCart = (props) => {
             </Link>
           </div>
           <div className="product-detail font-serif">
-            <Link aria-label="link" to="#">Delica omtantur</Link>
-            <span className="item-ammount">$100.00</span>
+            <Link aria-label="link" to="#">Pizza</Link>
+            <span className="item-ammount">$10.00</span>
           </div>
         </li>
         <li className="cart-item items-center">
@@ -809,8 +809,8 @@ export const HeaderCart = (props) => {
             </Link>
           </div>
           <div className="product-detail font-serif">
-            <Link aria-label="link" to="#">Gianvito rossi</Link>
-            <span className="item-ammount">$99.99</span>
+            <Link aria-label="link" to="#">Döner Kebab</Link>
+            <span className="item-ammount">$9.99</span>
           </div>
         </li>
         <li className="cart-item cart-total">
@@ -819,22 +819,22 @@ export const HeaderCart = (props) => {
               Subtotal:
             </span>
             <span className="w-[50%] inline-block text-right text-md font-medium">
-              $199.99
+              $20.80
             </span>
           </div>
           <Buttons
             to="/shop/shopping-cart"
-            className="btn-fill rounded-none font-medium font-serif uppercase md:mb-[15px]"
-            themeColor="#232323"
-            color="#fff"
+            className="btn btn-secondary rounded-none font-medium font-serif uppercase md:mb-[15px]"
+            themeColor="#e42564"
+            color="#2c6482"
             size="sm"
             title="view cart"
           />
           <Buttons
             to="/shop/checkout"
-            className="btn-fill rounded-none font-medium font-serif mb-0 uppercase sm:mb-[15px]"
-            themeColor="#0038e3"
-            color="#fff"
+            className="btn btn-secondary rounded-none font-medium font-serif uppercase md:mb-[15px]"
+           themeColor="#e42564"
+            color="#2c6482"
             size="sm"
             title="checkout"
           />

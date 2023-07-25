@@ -36,9 +36,9 @@ module.exports = {
         8: "8px",
       },
       colors: {
+        default: "#a00f3c",
         fastblue: "#0038e3",
-        darkgray: "#9c0434",
-        primarycolor: "#232323",
+        darkgray: "#232323",
         darkslateblue: "#1f232c",
         lightgray: "#f7f7f7",
         spanishgray: "#939393",
