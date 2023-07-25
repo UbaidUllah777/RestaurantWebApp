@@ -10,7 +10,7 @@ const HeaderData = [
     },
     {
         title: 'Menu',
-        link:'./page/about-us'
+        link:'./page/menu'
        
     },
     {
