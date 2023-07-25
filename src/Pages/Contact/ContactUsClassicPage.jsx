@@ -1,14 +1,13 @@
 import React, { useRef } from 'react'
 
 // Libraries
-import { Col, Container, Navbar, Row } from 'react-bootstrap';
+import { Col, Container,  Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { Parallax } from 'react-scroll-parallax';
 import { AnimatePresence, m } from 'framer-motion'
 import { Form, Formik } from 'formik';
 
 // Components
-import { Header,  HeaderNav, Menu } from "../../Components/Header/Header";
 import { fancyTextBox02 } from '../../Components/FancyTextBox/FancyTextBoxData';
 import SocialIcons from '../../Components/SocialIcon/SocialIcons';
 import FancyTextBox from '../../Components/FancyTextBox/FancyTextBox';
@@ -20,7 +19,6 @@ import Buttons from '../../Components/Button/Buttons'
 // import FooterStyle01 from '../../Components/Footers/FooterStyle01';
 import GoogleMap from '../../Components/GoogleMap/GoogleMap';
 import { resetForm, sendEmail } from '../../Functions/Utilities';
-import SideButtons from "../../Components/SideButtons";
 
 //Data
 const SocialIconsData = [

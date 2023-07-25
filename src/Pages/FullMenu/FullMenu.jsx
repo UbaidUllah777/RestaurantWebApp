@@ -7,18 +7,16 @@ import MasterCheffMessageImage2 from "../../Assets/img/home/home-restaurant-img-
 import MasterCheffMessageImage3 from "../../Assets/img/home/home-restaurant-img-15.webp"
 
 // Libraries
-import { Col, Container, Navbar, Row } from 'react-bootstrap'
+import { Col, Container, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import { Parallax } from 'react-scroll-parallax'
 import { m } from "framer-motion"
 import { Link as ScrollTo } from "react-scroll"
 
 // Components
-import Header, { HeaderNav, Menu } from '../../Components/Header/Header'
 import Buttons from '../../Components/Button/Buttons'
 import Tab03 from '../../Components/Tab/Tab03'
 
-import SideButtons from "../../Components/SideButtons";
 
 // Data
 

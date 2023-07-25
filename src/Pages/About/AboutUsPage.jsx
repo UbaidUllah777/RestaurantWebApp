@@ -1,7 +1,6 @@
 import React from 'react'
 
 // Components
-import { Header, HeaderCart, HeaderLanguage, HeaderNav, Menu, SearchBar } from "../../Components/Header/Header";
 import { fadeIn } from '../../Functions/GlobalAnimations'
 import Buttons from '../../Components/Button/Buttons'
 import Clients from '../../Components/Clients/Clients'
@@ -13,12 +12,10 @@ import Lists from '../../Components/Lists/Lists'
 import Counter from '../../Components/Counters/Counter'
 import Overlap from '../../Components/Overlap/Overlap'
 import CustomModal from '../../Components/CustomModal'
-import SideButtons from "../../Components/SideButtons";
 
 // Libraries
-import { Link } from "react-router-dom";
 import { Navigation } from "swiper";
-import { Col, Container, Row, Navbar } from 'react-bootstrap'
+import { Col, Container, Row } from 'react-bootstrap'
 import { Parallax } from 'react-scroll-parallax'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { m } from 'framer-motion'
