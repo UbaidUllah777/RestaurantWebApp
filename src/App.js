@@ -19,6 +19,9 @@ import Header, { HeaderNav, Menu } from "./Components/Header/Header";
 import SideButtons from "./Components/SideButtons";
 import Buttons from "./Components/Button/Buttons";
 
+// Srcs
+import defaultLogo from "../src/Assets/img/logo/SurajBawaLogo.png";
+
 // Home
 const RestaurantPage = lazy(() => import("./Pages/Home/Restaurant"));
 
@@ -110,7 +113,8 @@ function App(props) {
             >
               <HeaderNav
                 fluid="fluid"
-                theme="dark"
+                theme="light"
+                bg="light"
                 expand="lg"
                 className="px-[35px] py-[0px] md:pr-[15px] sm:pr-0 md:pl-0 md:py-[20px]"
               >
@@ -127,29 +131,29 @@ function App(props) {
                     <Navbar.Brand className="inline-block p-0 m-0">
                       <img
                         className="default-logo"
-                        width="111"
-                        height="36"
+                        width="133"
+                        height="144"
                         loading="lazy"
-                        src="/assets/img/webp/logo-golden-white.webp"
-                        data-rjs="/assets/img/webp/logo-golden-white@2x.webp"
+                        src={defaultLogo}
+                        data-rjs={defaultLogo}
                         alt="logo"
                       />
                       <img
                         className="alt-logo"
-                        width="111"
-                        height="36"
+                        width="133"
+                        height="144"
                         loading="lazy"
-                        src="/assets/img/webp/logo-golden-black.webp"
-                        data-rjs="/assets/img/webp/logo-golden-black@2x.webp"
+                        src={defaultLogo}
+                        data-rjs={defaultLogo}
                         alt="logo"
                       />
                       <img
                         className="mobile-logo"
-                        width="111"
-                        height="36"
+                        width="133"
+                        height="144"
                         loading="lazy"
-                        src="/assets/img/webp/logo-golden-black.webp"
-                        data-rjs="/assets/img/webp/logo-golden-black@2x.webp"
+                        src={defaultLogo}
+                        data-rjs={defaultLogo}
                         alt="logo"
                       />
                     </Navbar.Brand>
