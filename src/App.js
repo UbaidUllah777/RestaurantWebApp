@@ -15,6 +15,11 @@ import ScrollToTopButton from "./Components/ScrollToTop";
 const RestaurantPage = lazy(() => import("./Pages/Home/Restaurant"));
 //About Us
 const RestaurantAboutUsPage = lazy(() => import("./Pages/About/AboutUsPage"));
+// Contact us
+
+const RestaurantContactUsPage = lazy(() =>
+  import("./Pages/Contact/ContactUsClassicPage")
+);
 
 function App() {
   const [headerHeight, setHeaderHeight] = useState(0);
@@ -91,6 +96,14 @@ function App() {
                     path="/page/about-us"
                     element={
                       <RestaurantAboutUsPage
+                        style={{ "--base-color": "#0038e3" }}
+                      />
+                    }
+                  />{" "}
+                  <Route
+                    path="/page/contact-us"
+                    element={
+                      <RestaurantContactUsPage
                         style={{ "--base-color": "#0038e3" }}
                       />
                     }

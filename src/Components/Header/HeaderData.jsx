@@ -15,7 +15,7 @@ const HeaderData = [
     },
     {
         title: 'Contact Us',
-        link:'./page/about-us'
+        link:'./page/contact-us'
        
     },
   
