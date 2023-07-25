@@ -15,7 +15,11 @@ import GlobalContext from "./Context/Context";
 // Components
 import ScrollToTopButton from "./Components/ScrollToTop";
 import FooterStyle01 from "./Components/Footers/FooterStyle01";
-import Header, { HeaderNav, Menu } from "./Components/Header/Header";
+import Header, {
+  HeaderNav,
+  Menu,
+  HeaderCart,
+} from "./Components/Header/Header";
 import SideButtons from "./Components/SideButtons";
 import Buttons from "./Components/Button/Buttons";
 
@@ -177,16 +181,10 @@ function App(props) {
                     spy={true}
                     smooth={true}
                     duration={800}
-                  >
-                    <Buttons
-                      type="submit"
-                      className="btn-fill font-medium font-serif rounded-[2px] uppercase md:mb-0"
-                      themeColor="#ca943d"
-                      color="#fff"
-                      size="xs"
-                      title="book a table"
-                    />
-                  </ScrollTo>
+                  ></ScrollTo>
+                </Col>
+                <Col className="col-auto col-lg-2 text-end pe-0 font-size-0">
+                  <HeaderCart className="xs:pl-[15px]" />
                 </Col>
               </HeaderNav>
             </Header>
