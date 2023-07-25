@@ -202,7 +202,7 @@ function App(props) {
                   />
 
                   <Route
-                    path="/page/about-us"
+                    path="/about-us"
                     element={
                       <RestaurantAboutUsPage
                         style={{ "--base-color": "#0038e3" }}
@@ -211,7 +211,7 @@ function App(props) {
                   />
 
                   <Route
-                    path="/page/menu"
+                    path="/menu"
                     element={
                       <RestaurantMenuPage
                         style={{ "--base-color": "#0038e3" }}
@@ -219,7 +219,7 @@ function App(props) {
                     }
                   />
                   <Route
-                    path="/page/contact-us"
+                    path="/contact-us"
                     element={
                       <RestaurantContactUsPage
                         style={{ "--base-color": "#0038e3" }}

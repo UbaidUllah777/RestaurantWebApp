@@ -11,7 +11,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import { Parallax } from 'react-scroll-parallax'
 import { m } from "framer-motion"
-import { Link as ScrollTo } from "react-scroll"
+
 
 // Components
 import Buttons from '../../Components/Button/Buttons'

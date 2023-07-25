@@ -5,17 +5,17 @@ const HeaderData = [
     },
     {
         title: 'About Us',
-        link:'/page/about-us'
+        link:'/about-us'
        
     },
     {
         title: 'Menu',
-        link:'/page/menu'
+        link:'/menu'
        
     },
     {
         title: 'Contact Us',
-        link:'/page/contact-us'
+        link:'/contact-us'
        
     },
   
