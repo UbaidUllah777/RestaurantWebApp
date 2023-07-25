@@ -136,8 +136,8 @@ const ContactUsClassicPage = (props) => {
       {/* Section Start */}
       <section>
         <GoogleMap
-          className="grayscale h-[600px] p-0 md:h-[450px] xs:h-[300px]"
-          location="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.843821917424!2d144.956054!3d-37.817127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4c2b349649%3A0xb6899234e561db11!2sEnvato!5e0!3m2!1sen!2sin!4v1427947693651"
+          className=" h-[600px] p-0 md:h-[450px] xs:h-[300px]"
+          location="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124510.21294444661!2d6.635519140675627!3d51.443577359658015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8bef5a58b273b%3A0x427f281315473c0!2sDuisburg%2C%20Germany!5e0!3m2!1sen!2s!4v1690283875058!5m2!1sen!2s"
         />
       </section>
       {/* Section End */}
