@@ -8,15 +8,12 @@ import { AnimatePresence, m } from 'framer-motion'
 import { Form, Formik } from 'formik';
 
 // Components
-import { fancyTextBox02 } from '../../Components/FancyTextBox/FancyTextBoxData';
 import SocialIcons from '../../Components/SocialIcon/SocialIcons';
-import FancyTextBox from '../../Components/FancyTextBox/FancyTextBox';
 import { ContactFormStyle03Schema } from '../../Components/Form/FormSchema';
 import { Checkbox, Input, TextArea } from '../../Components/Form/Form'
 import { fadeIn } from '../../Functions/GlobalAnimations';
 import MessageBox from '../../Components/MessageBox/MessageBox';
 import Buttons from '../../Components/Button/Buttons'
-// import FooterStyle01 from '../../Components/Footers/FooterStyle01';
 import GoogleMap from '../../Components/GoogleMap/GoogleMap';
 import { resetForm, sendEmail } from '../../Functions/Utilities';
 
@@ -65,24 +62,9 @@ const ContactUsClassicPage = (props) => {
       </m.div>
       {/* Parallax Scrolling End */}
 
+      
       {/* Section Start */}
-      <m.section className="bg-lightgray py-[130px] lg:py-[90px] md:py-[75px] sm:py-[50px]" {...fadeIn}>
-        <Container>
-          <Row className="sm:justify-center">
-            <Col xs={12} sm={8} md={12}>
-              <FancyTextBox
-                grid="justify-center row-cols-1 row-cols-md-2 row-cols-lg-3 md:gap-y-[30px] xs:gap-y-[15px]"
-                theme="fancy-text-box-02"
-                data={fancyTextBox02}
-                animation={fadeIn} />
-            </Col>
-          </Row>
-        </Container>
-      </m.section>
-      {/* Section End */}
-
-      {/* Section Start */}
-      <m.section className="py-[130px] lg:py-[90px] md:py-[75px] sm:py-[50px]" {...fadeIn}>
+      <m.section className=" bg-lightgray py-[130px] lg:py-[90px] md:py-[75px] sm:py-[50px]" {...fadeIn}>
         <Container>
           <Row className="justify-center">
             <Col xl={6} lg={7} className="text-center mb-[4.5rem] md:mb-12">
@@ -131,66 +113,7 @@ const ContactUsClassicPage = (props) => {
       </m.section>
       {/* Section End */}
 
-      {/* Section Start */}
-      <section className="py-[160px] lg:py-[120px] md:py-[95px] sm:py-[80px] xs:py-[50px] relative z-1 fancy-box-background overflow-hidden cover-background" style={{ backgroundImage: 'url(https://via.placeholder.com/1929x807)' }}>
-        <div className="-z-[1] opacity-50 absolute h-full w-full  top-0 left-0 bg-gradient-to-tr from-[#556fff] via-[#b263e4] to-[#ff798e]"></div>
-        <Container>
-          <Row className="justify-center">
-            <Col lg={7} md={9} className="col-12 text-center mb-[108px] lg:mb-[90px] sm:mb-14">
-              <span className="font-serif text-white text-xmd opacity-80 block mb-[5px]">Fill out the form and we’ll be in touch soon!</span>
-              <h4 className="font-serif font-semibold text-white mb-0">Litho offices round the world</h4>
-            </Col>
-          </Row>
-          <Row className="justify-center">
-            <Col lg={4} md={6} sm={8} className="col-12 fancy-box-item md:mb-[30px] xs:mb-[15px]">
-              <div className="bg-banner-image cover-background" style={{ backgroundImage: 'url(https://via.placeholder.com/1920x1100)' }}>
-                <div className="opacity-medium -z-[1] absolute h-full w-full opacity-70 top-0 left-0 bg-gradient-to-tr from-[#556fff] via-[#b263e4] to-[#ff798e]"></div>
-              </div>
-              <div className="relative feature-box-main px-16 py-12 rounded-[5px] overflow-hidden lg:px-12">
-                <div className="flex items-center">
-                  <img width="16" height="16" loading="lazy" src="/assets/img/webp/contact-us-img-flag-01.webp" className="w-[35px] block feature-box-icon mr-[15px]" alt='UK' />
-                  <span className="feature-box-content font-serif block font-medium transition-default text-darkgray">UK - London</span>
-                </div>
-                <div className="bg-mediumgray inline-block mt-[20px] mb-[9px] w-full h-[1px]"></div>
-                <p className="mb-[20px] w-[85%] lg:w-full sm:w-[75%] xs:w-[85%]">401 Broadway, 24th Floor Orchard View, London, UK</p>
-                <span className="block font-medium mt-[10px] transition-default text-darkgray leading-[20px] w-full">Phone: 123 456 7890</span>
-                <a aria-label="mail" href="mailto:info@yourdomain.com" className="text-fastblue underline">info@yourdomain.com</a>
-              </div>
-            </Col>
-            <Col lg={4} md={6} sm={8} className="col-12 fancy-box-item md:mb-[30px] xs:mb-[15px]">
-              <div className="bg-banner-image cover-background" style={{ backgroundImage: 'url(https://via.placeholder.com/1920x805)' }}>
-                <div className="opacity-medium -z-[1] absolute h-full w-full opacity-70 top-0 left-0 bg-gradient-to-tr from-[#556fff] via-[#b263e4] to-[#ff798e]"></div>
-              </div>
-              <div className="relative feature-box-main px-16 py-12 rounded-[5px] overflow-hidden lg:px-12">
-                <div className="flex items-center">
-                  <img width="16" height="16" loading="lazy" src="/assets/img/webp/contact-us-img-flag-02.webp" className="w-[35px] block feature-box-icon mr-[15px]" alt='Paris' />
-                  <span className="feature-box-content font-serif block font-medium transition-default text-darkgray">France - Paris</span>
-                </div>
-                <div className="bg-mediumgray inline-block mt-[20px] mb-[9px] w-full h-[1px]"></div>
-                <p className="mb-[20px] w-[85%] lg:w-full sm:w-[75%] xs:w-[85%]">27 Eden Walk Eden Centre Orchard View, Paris, France</p>
-                <span className="block font-medium mt-[10px] transition-default text-darkgray leading-[20px] w-full">Phone: 123 456 7890</span>
-                <a aria-label="mail" href="mailto:info@yourdomain.com" className="text-fastblue underline">info@yourdomain.com</a>
-              </div>
-            </Col>
-            <Col lg={4} md={6} sm={8} className="col-12 fancy-box-item md:mb-[30px] xs:mb-[15px]">
-              <div className="bg-banner-image cover-background" style={{ backgroundImage: 'url(https://via.placeholder.com/1920x805)' }}>
-                <div className="opacity-medium -z-[1] absolute h-full w-full opacity-70 top-0 left-0 bg-gradient-to-tr from-[#556fff] via-[#b263e4] to-[#ff798e]"></div>
-              </div>
-              <div className="relative feature-box-main px-16 py-12 rounded-[5px] overflow-hidden lg:px-12">
-                <div className="feature-box-icon mr-[15px] flex items-center">
-                  <img width="16" height="16" loading="lazy" src="/assets/img/webp/contact-us-img-flag-03.webp" className="w-[35px] block mr-[15px]" alt='Canada' />
-                  <span className="feature-box-content font-serif block font-medium transition-default text-darkgray">Canada - Toronto</span>
-                </div>
-                <div className="bg-mediumgray inline-block mt-[20px] mb-[9px] w-full h-[1px]"></div>
-                <p className="mb-[20px] w-[85%] lg:w-full sm:w-[75%] xs:w-[85%]">523 North Stockport Road Canal Bridge, Toronto, Canada</p>
-                <span className="block font-medium mt-[10px] transition-default text-darkgray leading-[20px] w-full">Phone: 123 456 7890</span>
-                <a aria-label="mail" href="mailto:info@yourdomain.com" className="text-fastblue underline">info@yourdomain.com</a>
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </section>
-      {/* Section End */}
+      
 
       {/* Section Start */}
       <section className="py-[100px] md:py-[75px] sm:py-[50px]">
