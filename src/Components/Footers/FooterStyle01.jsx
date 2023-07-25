@@ -65,17 +65,20 @@ const FooterStyle01 = (props) => {
             <div className="py-[40px] border-t border-[#ffffff1a]">
                 <Container>
                     <Row>
-                        <Col md={3} className="sm:mb-[20px]">
-                            <Link aria-label="homepage" to="/" className="sm:flex sm:justify-center">
-                                <img alt="logo" src={props.logo} width="111" height="36" />
-                            </Link>
+                        
+                    <Col md={2} className="flex justify-center items-center text-center sm:mb-[20px]">
+                            
                         </Col>
+                        
                         <Col md={6} className="flex justify-center items-center text-center sm:mb-[20px]">
-                            <p className="mb-0">&copy; {new Date().getFullYear()} Litho is Proudly Powered by <a aria-label="themezaa" rel="noreferrer" href="https://www.themezaa.com/" className="hover:text-white" target="_blank"> ThemeZaa</a></p>
+                            <p className="mb-0">&copy; {new Date().getFullYear()} Suraj Bawa all rights reserved </p>
+                            <p  style={{ fontSize:"0.8rem"}}> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Developed by <a aria-label="BxTechnoloies" rel="noreferrer" href="https://www.bxtechnologies.net/" className="hover:text-white" target="_blank" style={{color:"white", fontSize:".7rem", marginRight:"30px"}}> Bx Technologies</a></p>
+                      
                         </Col>
                         <Col md={3} className="text-right sm:text-center">
                             <SocialIcons size="xs" theme="social-icon-style-01" className="justify-end sm:justify-center" iconColor={props.theme === "dark" ? "light" : "dark"} data={iconData} />
-                        </Col>
+                          
+                            </Col>
                     </Row>
                 </Container>
             </div>
