@@ -19,11 +19,7 @@ const iconData = [
         link: "https://www.facebook.com/",
         icon: "fab fa-facebook-f"
     },
-    {
-        color: "#828282",
-        link: "https://dribbble.com/",
-        icon: "fab fa-dribbble"
-    },
+   
     {
         color: "#828282",
         link: "https://twitter.com/",
@@ -44,18 +40,18 @@ const FooterStyle01 = (props) => {
                     <Row>
                         <FooterMenu data={FooterData.slice(0, 2)} lg={3} sm={6} className="xl:px-[15px] md:mb-[40px] xs:mb-[25px]" titleClass="capitalize" />
                         <Col lg={3} sm={6} className="xs:mb-[25px]">
-                            <span className="mb-[20px] font-serif block font-medium text-themecolor xs:mb-[10px]">Get in touch</span>
-                            <p className="w-[85%] mb-[15px]">27 Eden walk eden centre, Orchard view, Paris, France</p>
+                            <span className="mb-[20px] font-serif block font-medium text-themecolor xs:mb-[10px]">Reach Us</span>
+                            <p className="w-[85%] mb-[15px]">Suraj Bawa, Duisburg Germany</p>
                             <div><i className="feather-phone-call text-sm mr-[10px] text-themecolor"></i>+1 234 567 8910</div>
-                            <div><i className="feather-mail text-sm mr-[10px] text-themecolor"></i><a aria-label="mail" href="mailTo:info@yourdomain.com">info@yourdomain.com</a></div>
+                            <div><i className="feather-mail text-sm mr-[10px] text-themecolor"></i><a aria-label="mail" href="mailTo:info@surajbawa.com">info@surajbawa.com</a></div>
                         </Col>
                         <Col lg={3} sm={6}>
-                            <span className="mb-[20px] font-medium font-serif text-themecolor block xs:mb-[20px]">Follow us on Instagram</span>
+                            <span className="mb-[20px] font-medium font-serif text-themecolor block xs:mb-[20px]">Follow Us On Isntagram</span>
                             <div className="w-full inline-block">
                                 <StaticInstagram total_posts={3} />
                                 <a aria-label="link" rel="noreferrer" href="https://www.instagram.com/" target="_blank" className="flex justify-start text-slateblue font-medium text-xs font-serif uppercase mt-[20px] items-center hover:text-white">
-                                    <i className="fab fa-instagram text-lg mr-[10px] text-gradient bg-gradient-to-r from-[#ff85a6] to-[#b783ff]"></i>
-                                    <span className="inline-block hover:text-white">Follow instagram</span>
+                                   
+                                    
                                 </a>
                             </div>
                         </Col>
