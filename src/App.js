@@ -103,8 +103,7 @@ function App() {
                     path="footer-style-01"
                     element={<Footer style={{ "--base-color": "#0038e3" }} />}
                   />
-                  {/* Home */}
-                  <Route path="/" element={<RestaurantPage />} />
+
                   <Route
                     path="/page/about-us"
                     element={
@@ -130,6 +129,8 @@ function App() {
                       />
                     }
                   />
+                  {/* Home */}
+                  <Route path="/" element={<RestaurantPage />} />
                 </Routes>
               </Suspense>
             </AnimatePresence>

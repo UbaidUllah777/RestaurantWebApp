@@ -51,38 +51,32 @@ const ContactUsClassicPage = (props) => {
   const form = useRef(null)
   return (
     <div style={props.style}>
+      <SideButtons />
       {/* Header Start */}
-      <Header topSpace={{ md: true }} type="reverse-scroll">
-        <HeaderNav theme="dark" expand="lg" className="py-[0px] lg:px-[15px] md:px-0" containerClass="sm:px-0">
-          <Col className="col-auto col-sm-6 col-lg-2 me-auto ps-lg-0">
-            <Link aria-label="header logo" className="flex items-center" to="/">
+      <Header topSpace={{ dekstop: false, md: true }} type="reverse-scroll">
+        <HeaderNav fluid="fluid" theme="dark" expand="lg" className="px-[35px] py-[0px] md:pr-[15px] sm:pr-0 md:pl-0 md:py-[20px]">
+          <Col lg={2} sm={6} className="col-auto me-auto ps-lg-0 sm:!pl-0">
+            <Link aria-label="header home link" className="flex items-center" to="/">
               <Navbar.Brand className="inline-block p-0 m-0">
-                <img className="default-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-white.webp' data-rjs='/assets/img/webp/logo-white@2x.webp' alt='logo' />
-                <img className="alt-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-fast-blue-black.webp' data-rjs='/assets/img/webp/logo-fast-blue-black@2x.webp' alt='logo' />
-                <img className="mobile-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-fast-blue-black.webp' data-rjs='/assets/img/webp/logo-fast-blue-black@2x.webp' alt='logo' />
+                <img className="default-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-golden-white.webp' data-rjs='/assets/img/webp/logo-golden-white@2x.webp' alt='logo' />
+                <img className="alt-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-golden-black.webp' data-rjs='/assets/img/webp/logo-golden-black@2x.webp' alt='logo' />
+                <img className="mobile-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-golden-black.webp' data-rjs='/assets/img/webp/logo-golden-black@2x.webp' alt='logo' />
               </Navbar.Brand>
             </Link>
           </Col>
-          <div className="col-auto hidden order-last md:block">
-            <Navbar.Toggle className="md:ml-[10px] sm:ml-0">
-              <span className="navbar-toggler-line"></span>
-              <span className="navbar-toggler-line"></span>
-              <span className="navbar-toggler-line"></span>
-              <span className="navbar-toggler-line"></span>
-            </Navbar.Toggle>
-          </div>
-          <Navbar.Collapse className="col-auto px-0 justify-end">
+          <Navbar.Toggle className="order-last md:ml-[25px] sm:ml-[17px]">
+            <span className="navbar-toggler-line"></span>
+            <span className="navbar-toggler-line"></span>
+            <span className="navbar-toggler-line"></span>
+            <span className="navbar-toggler-line"></span>
+          </Navbar.Toggle>
+          <Navbar.Collapse className="col-auto justify-center menu-order px-lg-0 restaurant-header-menu">
             <Menu {...props} />
           </Navbar.Collapse>
-          <Col className="col-auto text-right pe-0">
-            <SearchBar className="pr-0 xs:pl-[15px]" />
-            <HeaderLanguage className="xs:pl-[15px]" />
-            <HeaderCart className="xs:pl-[15px]" style={{ "--base-color": "#0038e3" }} />
-          </Col>
+     
         </HeaderNav>
       </Header>
       {/* Header End */}
-      <SideButtons />
       {/* Parallax Scrolling Start */}
       <m.div className="md:flex md:items-center overflow-hidden relative md:h-[465px] sm:h-[350px] xs:h-[357px]" {...fadeIn}>
         <Parallax className="lg-no-parallax bg-cover cover-background absolute left-0 h-[120vh] top-[60px] lg:h-[64vh] lg:top-[-46px] lg:!translate-y-0 md:h-[60vh] md:-top-[30px] sm:top-[-44px] sm:h-[49vh] xs:top-0 xs:h-[40vh] w-full" translateY={[-40, 40]} style={{ backgroundImage: `url(https://via.placeholder.com/1920x1100)` }}></Parallax>
