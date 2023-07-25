@@ -2,8 +2,7 @@ import React from 'react'
 
 // Libraries
 import { Col, Container, Navbar, Row } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
-import FooterStyle01 from "../Components/Footers/FooterStyle01"
+
 
 // Components
 import { Header, HeaderCart, HeaderLanguage, HeaderNav, Menu, SearchBar } from '../Components/Header/Header'
@@ -35,7 +34,7 @@ const Privacy = (props) => {
         <Container>
           <Row className="xs:text-center">
             <Col xl={8} lg={6} className="flex md:justify-center md:mb-[15px] sm:block sm:text-center">
-              <h1 className="my-[30px] sm:my-[20px] text-lg text-darkgray font-medium mb-0 font-serif inline-block">Privacy policy</h1>
+              <h1 className="my-[30px] sm:my-[20px] text-lg text-darkgray font-medium mb-0 font-serif inline-block">Imprint</h1>
               <span className="my-[30px] sm:my-[20px] font-serif text-md relative pl-[25px] ml-[25px] block sm:mt-[5px] sm:p-0 before:absolute before:bg-darkgray before:content-[''] before:h-[12px] before:top-[4px] before:w-[2px] before:left-0 sm:before:hidden sm:ml-0">Suraj Bawa </span>
             </Col>
         
@@ -48,7 +47,7 @@ const Privacy = (props) => {
             <Container>
                 <Row className="items-center justify-center">
                     <Col lg={9} md={12} className="col-12">
-                        <h6 className="font-serif text-darkgray font-medium -tracking-[1px]">General information</h6>
+                        <h6 className="font-serif text-darkgray font-medium -tracking-[1px]">Registration </h6>
                         <p className="mb-[25px] md:mb-[20px] sm:mb-[15px]">Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry’s standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap electronic typesetting, essentially unchanged.</p>
                         <p className="mb-[25px] md:mb-[20px] sm:mb-[15px]">Lorem ipsum has been the industry’s standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem ipsum is simply dummy text of the printing and typesetting industry.</p>
                         <p className="mb-0">&nbsp;</p>

@@ -22,6 +22,8 @@ import Header, {
 } from "./Components/Header/Header";
 import SideButtons from "./Components/SideButtons";
 import Buttons from "./Components/Button/Buttons";
+import Privacy from "./Pages/Privacy";
+import Imprint from "./Pages/Imprint";
 
 // Srcs
 import defaultLogo from "../src/Assets/img/logo/SurajBawaLogo.png";
@@ -223,6 +225,16 @@ function App(props) {
                         style={{ "--base-color": "#0038e3" }}
                       />
                     }
+                  />
+
+                  <Route
+                    path="/Imprint"
+                    element={<Imprint style={{ "--base-color": "#0038e3" }} />}
+                  />
+
+                  <Route
+                    path="/Privacy"
+                    element={<Privacy style={{ "--base-color": "#0038e3" }} />}
                   />
                   {/* Home */}
                   <Route path="/" element={<RestaurantPage />} />

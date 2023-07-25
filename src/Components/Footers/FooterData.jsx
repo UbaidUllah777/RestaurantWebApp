@@ -22,12 +22,12 @@ const FooterData = [
         submenu: [
             {
                 title: "Privacy Policy",
-                link: "#"
+                link: "/Privacy"
             },
          
             {
                 title: "Imprint",
-                link: "#"
+                link: "/Imprint"
             },
             {
                 title: "FAQs",
