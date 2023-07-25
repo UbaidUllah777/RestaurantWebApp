@@ -18,7 +18,7 @@ import { Link as ScrollTo } from "react-scroll"
 
 // Components
 import Header, { HeaderNav, Menu } from '../../Components/Header/Header'
-import FooterStyle01 from '../../Components/Footers/FooterStyle01'
+
 
 import Buttons from '../../Components/Button/Buttons'
 import Overlap from '../../Components/Overlap/Overlap'
@@ -437,9 +437,6 @@ const RestaurantPage = (props) => {
       {/* Section Start */}
 
      
-        {/* Footer Start */}
-        <FooterStyle01 theme="dark" className="bg-[#262b35] text-slateblue" />
-        {/* Footer End */}
 
     </div>
   )

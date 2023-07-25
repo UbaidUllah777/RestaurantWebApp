@@ -8,7 +8,7 @@ import { AnimatePresence, m } from 'framer-motion'
 import { Form, Formik } from 'formik';
 
 // Components
-import { Header, HeaderCart, HeaderLanguage, HeaderNav, Menu, SearchBar } from "../../Components/Header/Header";
+import { Header,  HeaderNav, Menu } from "../../Components/Header/Header";
 import { fancyTextBox02 } from '../../Components/FancyTextBox/FancyTextBoxData';
 import SocialIcons from '../../Components/SocialIcon/SocialIcons';
 import FancyTextBox from '../../Components/FancyTextBox/FancyTextBox';
@@ -17,7 +17,7 @@ import { Checkbox, Input, TextArea } from '../../Components/Form/Form'
 import { fadeIn } from '../../Functions/GlobalAnimations';
 import MessageBox from '../../Components/MessageBox/MessageBox';
 import Buttons from '../../Components/Button/Buttons'
-import FooterStyle01 from '../../Components/Footers/FooterStyle01';
+// import FooterStyle01 from '../../Components/Footers/FooterStyle01';
 import GoogleMap from '../../Components/GoogleMap/GoogleMap';
 import { resetForm, sendEmail } from '../../Functions/Utilities';
 import SideButtons from "../../Components/SideButtons";
@@ -246,9 +246,6 @@ const ContactUsClassicPage = (props) => {
       </section>
       {/* Section End */}
 
-      {/* Footer Start */}
-      <FooterStyle01 theme="dark" className="bg-[#262b35] text-slateblue" />
-      {/* Footer End */}
     </div>
   )
 }

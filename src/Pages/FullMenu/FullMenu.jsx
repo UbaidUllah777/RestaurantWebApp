@@ -17,13 +17,12 @@ import { Link as ScrollTo } from "react-scroll"
 import Header, { HeaderNav, Menu } from '../../Components/Header/Header'
 import Buttons from '../../Components/Button/Buttons'
 import Tab03 from '../../Components/Tab/Tab03'
-import Testimonials from '../../Components/Testimonials/Testimonials'
-import TextSlider03 from '../../Components/TextSlider/TextSlider03'
+
+// import FooterStyle01 from '../../Components/Footers/FooterStyle01'
 import SideButtons from "../../Components/SideButtons";
 
 // Data
-import { TestimonialsData04 } from '../../Components/Testimonials/TestimonialsData'
-import { TextSliderData03 } from '../../Components/TextSlider/TextSliderData'
+
 import { TabData03 } from '../../Components/Tab/TabData'
 
 // Animations
@@ -33,7 +32,7 @@ const RestaurantPage = (props) => {
 
   return (
     <div>
-      <SideButtons />
+          <SideButtons />
       {/* Header Start */}
       <Header topSpace={{ dekstop: false, md: true }} type="reverse-scroll">
         <HeaderNav fluid="fluid" theme="dark" expand="lg" className="px-[35px] py-[0px] md:pr-[15px] sm:pr-0 md:pl-0 md:py-[20px]">
@@ -349,33 +348,6 @@ const RestaurantPage = (props) => {
       </section>
       {/* Section Start */}
 
-      {/* Footer Start */}
-      <footer className="text-[#828282] py-[60px] border-t border-mediumgray md:pt-[80px] md:pb-[60px]">
-        <Container>
-          <Row className="items-center">
-            <Col md={6} className="sm:mb-[15px]">
-              <ul className="flex text-sm font-serif text-center justify-start md:justify-start sm:justify-center xs:text-center xs:flex-col">
-                <li className="nav-item mr-[35px] md:mr-[20px] xs:mr-0 xs:mb-[7px]">
-                  <Link aria-label="about link" to="#" className="hover:text-[#ca943d]">ABOUT CAFE</Link>
-                </li>
-                <li className="nav-item mr-[35px] md:mr-[20px] xs:mr-0 xs:mb-[7px]">
-                  <Link aria-label="menu link" to="#" className="hover:text-[#ca943d]">MENU</Link>
-                </li>
-                <li className="nav-item mr-[35px] md:mr-[20px] xs:mr-0 xs:mb-[7px]">
-                  <Link aria-label="gallery link" to="#" className="hover:text-[#ca943d]">GALLERY</Link>
-                </li>
-                <li className="nav-item">
-                  <Link aria-label="contact link" to="#" className="hover:text-[#ca943d]">CONTACT</Link>
-                </li>
-              </ul>
-            </Col>
-            <Col md={6} className="text-right sm:text-center">
-              <p className="text-sm uppercase flex items-center justify-end sm:justify-center">© {new Date().getFullYear()} Litho is Proudly Powered by&nbsp;<Buttons target="_blank" href="https://www.themezaa.com/" aria-label="button" className="font-semibold p-0 font-serif text-decoration-line-bottom uppercase btn-link md:text-md hover:text-[#828282] !text-sm landscape:md:!leading-[18px]" color="#000" title="ThemeZaa" /></p>
-            </Col>
-          </Row>
-        </Container>
-      </footer>
-      {/* Footer End */}
 
     </div>
   )

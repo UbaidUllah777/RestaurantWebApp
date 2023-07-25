@@ -10,6 +10,7 @@ import GlobalContext from "./Context/Context";
 
 // Components
 import ScrollToTopButton from "./Components/ScrollToTop";
+import FooterStyle01 from "./Components/Footers/FooterStyle01";
 
 // Home
 const RestaurantPage = lazy(() => import("./Pages/Home/Restaurant"));
@@ -134,6 +135,10 @@ function App() {
                 </Routes>
               </Suspense>
             </AnimatePresence>
+            <FooterStyle01
+              theme="dark"
+              className="bg-[#262b35] text-slateblue"
+            />
           </main>
         }
       </div>
