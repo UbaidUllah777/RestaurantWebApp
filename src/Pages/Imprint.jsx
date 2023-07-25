@@ -1,11 +1,10 @@
 import React from 'react'
 
 // Libraries
-import { Col, Container, Navbar, Row } from 'react-bootstrap'
+import { Col, Container, Row } from 'react-bootstrap'
 
 
 // Components
-import { Header, HeaderCart, HeaderLanguage, HeaderNav, Menu, SearchBar } from '../Components/Header/Header'
 import Lists from "../Components/Lists/Lists"
 
 // Data

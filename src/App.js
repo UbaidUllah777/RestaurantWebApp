@@ -21,7 +21,7 @@ import Header, {
   HeaderCart,
 } from "./Components/Header/Header";
 import SideButtons from "./Components/SideButtons";
-import Buttons from "./Components/Button/Buttons";
+
 import Privacy from "./Pages/Privacy";
 import Imprint from "./Pages/Imprint";
 

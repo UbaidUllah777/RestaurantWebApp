@@ -43,7 +43,7 @@ const RestaurantPage = (props) => {
       {/* Parallax Scrolling Start */}
       <div id="parallax-section" className="full-screen md:flex md:items-center landscape:md:h-[600px] overflow-hidden relative">
         <Parallax className="lg-no-parallax bg-cover absolute top-[0px] left-0 md:-top-[30px] w-full h-[100vh]" translateY={[-40, 40]} style={{ backgroundImage: `url(${bannerImage})` }}></Parallax>
-        <div className="absolute h-full w-full opacity-60 top-0 left-0 bg-darkgray"></div>
+        <div className="absolute h-full w-full opacity-60 top-0 left-0 bg-primarycolorfake"></div>
         <Container className="relative h-full">
           <Row className="justify-center items-center h-full">
             <Col xl={8} md={10} lg={8} className="flex-col flex justify-center text-center h-[600px]">
@@ -324,7 +324,7 @@ const RestaurantPage = (props) => {
         <Container fluid>
           <Row xl={4} sm={2} xs={1}>
             <m.div {...fadeInUp} className="col mt-[3.5rem] cover-background h-[650px] px-0 lg:m-0 md:h-[500px] xs:h-[450px]" style={{ backgroundImage: `url(https://via.placeholder.com/800x1081)` }}>
-              <div className="absolute top-0 left-0 w-full h-full opacity-70 bg-darkgray"></div>
+              <div className="absolute top-0 left-0 w-full h-full opacity-70 bg-primarycolorfake"></div>
               <div className="flex flex-col h-full p-20 text-center relative z-[1] xl:px-12 lg:px-16">
                 <span className="font-serif font-medium uppercase text-[#ca943d]">Loaded cheese</span>
                 <h2 className="heading-4 font-serif font-semibold text-white uppercase mb-0 mt-auto -tracking-[.5px]">Delicious burger</h2>
@@ -343,7 +343,7 @@ const RestaurantPage = (props) => {
               </div>
             </m.div>
             <m.div {...fadeInUp} className="mt-14 cover-background h-[650px] px-0 lg:m-0 md:h-[500px] xs:h-[450px]" style={{ backgroundImage: `url(https://via.placeholder.com/800x1081)` }}>
-              <div className="absolute top-0 left-0 w-full h-full opacity-70 bg-darkgray"></div>
+              <div className="absolute top-0 left-0 w-full h-full opacity-70 bg-primarycolorfake"></div>
               <div className="flex flex-col h-full p-20 text-center relative z-[1] xl:px-12 lg:px-32">
                 <span className="font-serif font-medium uppercase text-[#ca943d]">Barbeque lover</span>
                 <h2 className="heading-4 font-serif font-semibold text-white uppercase mb-0 mt-auto -tracking-[.5px]">Barbecue festival</h2>
@@ -353,7 +353,7 @@ const RestaurantPage = (props) => {
               </div>
             </m.div>
             <m.div {...fadeInUp} className="cover-background h-[650px] px-0 md:h-[500px] xs:h-[450px]" style={{ backgroundImage: `url(https://via.placeholder.com/800x1081)` }}>
-              <div className="flex flex-col h-full justify-start py-20 px-24 text-center relative z-[1] xl:px-12 lg:px-32">
+              <div className="flex flex-col h-full justify-start py-20 px-24 text-center relative z-[1] xl:px-12 lg:px-32 ">
                 <span className="font-serif font-medium uppercase text-darkgray block mb-[15px]">Every saturday</span>
                 <h2 className="heading-4 font-serif font-semibold text-white uppercase -tracking-[.5px]">Healthy cooking night</h2>
                 <Link aria-label="Healthy cooking night" to="#" className="w-[40px] h-[40px] leading-[40px] bg-white rounded-full self-center">
