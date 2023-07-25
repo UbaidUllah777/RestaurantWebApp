@@ -398,13 +398,7 @@ const RestaurantPage = (props) => {
       </section>
       {/* Section End */}
 
-      {/* Section Start */}
-      <section className="overflow-visible relative py-0">
-        <ScrollTo href="#" to="parallax-section" offset={0} delay={0} spy={true} smooth={true} duration={800} className="left-1/2 top-1/2 absolute -translate-x-1/2 z-[1] -translate-y-1/2 cursor-pointer">
-          <m.img {...{ ...zoomIn, transition: { duration: 0.8 } }} width={198} height={197} className="w-[auto] md:w-[150px] sm:w-[100px]" src="https://via.placeholder.com/198x197" alt="restaurant" />
-        </ScrollTo>
-      </section>
-      {/* Section Start */}
+     
 
      
 
