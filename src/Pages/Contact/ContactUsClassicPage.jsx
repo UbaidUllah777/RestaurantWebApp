@@ -51,32 +51,7 @@ const ContactUsClassicPage = (props) => {
   const form = useRef(null)
   return (
     <div style={props.style}>
-      <SideButtons />
-      {/* Header Start */}
-      <Header topSpace={{ dekstop: false, md: true }} type="reverse-scroll">
-        <HeaderNav fluid="fluid" theme="dark" expand="lg" className="px-[35px] py-[0px] md:pr-[15px] sm:pr-0 md:pl-0 md:py-[20px]">
-          <Col lg={2} sm={6} className="col-auto me-auto ps-lg-0 sm:!pl-0">
-            <Link aria-label="header home link" className="flex items-center" to="/">
-              <Navbar.Brand className="inline-block p-0 m-0">
-                <img className="default-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-golden-white.webp' data-rjs='/assets/img/webp/logo-golden-white@2x.webp' alt='logo' />
-                <img className="alt-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-golden-black.webp' data-rjs='/assets/img/webp/logo-golden-black@2x.webp' alt='logo' />
-                <img className="mobile-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-golden-black.webp' data-rjs='/assets/img/webp/logo-golden-black@2x.webp' alt='logo' />
-              </Navbar.Brand>
-            </Link>
-          </Col>
-          <Navbar.Toggle className="order-last md:ml-[25px] sm:ml-[17px]">
-            <span className="navbar-toggler-line"></span>
-            <span className="navbar-toggler-line"></span>
-            <span className="navbar-toggler-line"></span>
-            <span className="navbar-toggler-line"></span>
-          </Navbar.Toggle>
-          <Navbar.Collapse className="col-auto justify-center menu-order px-lg-0 restaurant-header-menu">
-            <Menu {...props} />
-          </Navbar.Collapse>
-     
-        </HeaderNav>
-      </Header>
-      {/* Header End */}
+ 
       {/* Parallax Scrolling Start */}
       <m.div className="md:flex md:items-center overflow-hidden relative md:h-[465px] sm:h-[350px] xs:h-[357px]" {...fadeIn}>
         <Parallax className="lg-no-parallax bg-cover cover-background absolute left-0 h-[120vh] top-[60px] lg:h-[64vh] lg:top-[-46px] lg:!translate-y-0 md:h-[60vh] md:-top-[30px] sm:top-[-44px] sm:h-[49vh] xs:top-0 xs:h-[40vh] w-full" translateY={[-40, 40]} style={{ backgroundImage: `url(https://via.placeholder.com/1920x1100)` }}></Parallax>

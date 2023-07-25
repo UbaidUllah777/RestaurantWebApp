@@ -18,7 +18,6 @@ import Header, { HeaderNav, Menu } from '../../Components/Header/Header'
 import Buttons from '../../Components/Button/Buttons'
 import Tab03 from '../../Components/Tab/Tab03'
 
-// import FooterStyle01 from '../../Components/Footers/FooterStyle01'
 import SideButtons from "../../Components/SideButtons";
 
 // Data
@@ -32,36 +31,7 @@ const RestaurantPage = (props) => {
 
   return (
     <div>
-          <SideButtons />
-      {/* Header Start */}
-      <Header topSpace={{ dekstop: false, md: true }} type="reverse-scroll">
-        <HeaderNav fluid="fluid" theme="dark" expand="lg" className="px-[35px] py-[0px] md:pr-[15px] sm:pr-0 md:pl-0 md:py-[20px]">
-          <Col lg={2} sm={6} className="col-auto me-auto ps-lg-0 sm:!pl-0">
-            <Link aria-label="header home link" className="flex items-center" to="/">
-              <Navbar.Brand className="inline-block p-0 m-0">
-                <img className="default-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-golden-white.webp' data-rjs='/assets/img/webp/logo-golden-white@2x.webp' alt='logo' />
-                <img className="alt-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-golden-black.webp' data-rjs='/assets/img/webp/logo-golden-black@2x.webp' alt='logo' />
-                <img className="mobile-logo" width="111" height="36" loading="lazy" src='/assets/img/webp/logo-golden-black.webp' data-rjs='/assets/img/webp/logo-golden-black@2x.webp' alt='logo' />
-              </Navbar.Brand>
-            </Link>
-          </Col>
-          <Navbar.Toggle className="order-last md:ml-[25px] sm:ml-[17px]">
-            <span className="navbar-toggler-line"></span>
-            <span className="navbar-toggler-line"></span>
-            <span className="navbar-toggler-line"></span>
-            <span className="navbar-toggler-line"></span>
-          </Navbar.Toggle>
-          <Navbar.Collapse className="col-auto justify-center menu-order px-lg-0 restaurant-header-menu">
-            <Menu {...props} />
-          </Navbar.Collapse>
-          <Col className="col-auto col-lg-2 text-right pe-0 font-size-0 sm:hidden">
-            <ScrollTo href="#" to="experience" offset={0} delay={0} spy={true} smooth={true} duration={800}>
-              <Buttons type="submit" className="btn-fill font-medium font-serif rounded-[2px] uppercase md:mb-0" themeColor="#ca943d" color="#fff" size="xs" title="book a table" />
-            </ScrollTo>
-          </Col>
-        </HeaderNav>
-      </Header>
-      {/* Header End */}
+
 
       {/* Parallax Scrolling Start */}
       <div id="parallax-section" className="full-screen md:flex md:items-center landscape:md:h-[600px] overflow-hidden relative">

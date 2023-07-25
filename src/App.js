@@ -4,6 +4,10 @@ import React, { Suspense, useEffect, useState, lazy } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import retina from "retinajs";
 import { AnimatePresence } from "framer-motion";
+import { Col, Navbar } from "react-bootstrap";
+import { Link } from "react-router-dom";
+
+import { Link as ScrollTo } from "react-scroll";
 
 // Context
 import GlobalContext from "./Context/Context";
@@ -11,6 +15,9 @@ import GlobalContext from "./Context/Context";
 // Components
 import ScrollToTopButton from "./Components/ScrollToTop";
 import FooterStyle01 from "./Components/Footers/FooterStyle01";
+import Header, { HeaderNav, Menu } from "./Components/Header/Header";
+import SideButtons from "./Components/SideButtons";
+import Buttons from "./Components/Button/Buttons";
 
 // Home
 const RestaurantPage = lazy(() => import("./Pages/Home/Restaurant"));
@@ -30,7 +37,7 @@ const RestaurantContactUsPage = lazy(() =>
   import("./Pages/Contact/ContactUsClassicPage")
 );
 
-function App() {
+function App(props) {
   const [headerHeight, setHeaderHeight] = useState(0);
   const [footerHeight, setFooterHeight] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -95,6 +102,91 @@ function App() {
       <div className="App" style={{ "--header-height": `${headerHeight}px` }}>
         {
           <main style={{ marginTop: headerHeight, marginBottom: footerHeight }}>
+            <SideButtons />
+            {/* Header Start */}
+            <Header
+              topSpace={{ dekstop: false, md: true }}
+              type="reverse-scroll"
+            >
+              <HeaderNav
+                fluid="fluid"
+                theme="dark"
+                expand="lg"
+                className="px-[35px] py-[0px] md:pr-[15px] sm:pr-0 md:pl-0 md:py-[20px]"
+              >
+                <Col
+                  lg={2}
+                  sm={6}
+                  className="col-auto me-auto ps-lg-0 sm:!pl-0"
+                >
+                  <Link
+                    aria-label="header home link"
+                    className="flex items-center"
+                    to="/"
+                  >
+                    <Navbar.Brand className="inline-block p-0 m-0">
+                      <img
+                        className="default-logo"
+                        width="111"
+                        height="36"
+                        loading="lazy"
+                        src="/assets/img/webp/logo-golden-white.webp"
+                        data-rjs="/assets/img/webp/logo-golden-white@2x.webp"
+                        alt="logo"
+                      />
+                      <img
+                        className="alt-logo"
+                        width="111"
+                        height="36"
+                        loading="lazy"
+                        src="/assets/img/webp/logo-golden-black.webp"
+                        data-rjs="/assets/img/webp/logo-golden-black@2x.webp"
+                        alt="logo"
+                      />
+                      <img
+                        className="mobile-logo"
+                        width="111"
+                        height="36"
+                        loading="lazy"
+                        src="/assets/img/webp/logo-golden-black.webp"
+                        data-rjs="/assets/img/webp/logo-golden-black@2x.webp"
+                        alt="logo"
+                      />
+                    </Navbar.Brand>
+                  </Link>
+                </Col>
+                <Navbar.Toggle className="order-last md:ml-[25px] sm:ml-[17px]">
+                  <span className="navbar-toggler-line"></span>
+                  <span className="navbar-toggler-line"></span>
+                  <span className="navbar-toggler-line"></span>
+                  <span className="navbar-toggler-line"></span>
+                </Navbar.Toggle>
+                <Navbar.Collapse className="col-auto justify-center menu-order px-lg-0 restaurant-header-menu">
+                  <Menu {...props} />
+                </Navbar.Collapse>
+                <Col className="col-auto col-lg-2 text-right pe-0 font-size-0 sm:hidden">
+                  <ScrollTo
+                    href="#"
+                    to="experience"
+                    offset={0}
+                    delay={0}
+                    spy={true}
+                    smooth={true}
+                    duration={800}
+                  >
+                    <Buttons
+                      type="submit"
+                      className="btn-fill font-medium font-serif rounded-[2px] uppercase md:mb-0"
+                      themeColor="#ca943d"
+                      color="#fff"
+                      size="xs"
+                      title="book a table"
+                    />
+                  </ScrollTo>
+                </Col>
+              </HeaderNav>
+            </Header>
+            {/* Header End */}
             <ScrollToTopButton />
             <AnimatePresence exitBeforeEnter>
               <Suspense fallback={<></>}>
