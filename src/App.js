@@ -13,6 +13,10 @@ import ScrollToTopButton from "./Components/ScrollToTop";
 
 // Home
 const RestaurantPage = lazy(() => import("./Pages/Home/Restaurant"));
+
+// Footer
+const Footer = lazy(() => import("./Pages/Footer/FooterStyle01Page"));
+
 //About Us
 const RestaurantAboutUsPage = lazy(() => import("./Pages/About/AboutUsPage"));
 
@@ -94,7 +98,12 @@ function App() {
             <AnimatePresence exitBeforeEnter>
               <Suspense fallback={<></>}>
                 <Routes>
-                  {/* Home Specialized */}
+                  {/* Footers */}
+                  <Route
+                    path="footer-style-01"
+                    element={<Footer style={{ "--base-color": "#0038e3" }} />}
+                  />
+                  {/* Home */}
                   <Route path="/" element={<RestaurantPage />} />
                   <Route
                     path="/page/about-us"
