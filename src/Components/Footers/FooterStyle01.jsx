@@ -44,7 +44,7 @@ const FooterStyle01 = (props) => {
                             <p className="w-[85%] mb-[15px]">Suraj Bawa, Duisburg Germany</p>
                             <div><i className="feather-phone-call text-sm mr-[10px] text-themecolor"></i>+1 234 567 8910</div>
                             <div><i className="feather-mail text-sm mr-[10px] text-themecolor"></i><a aria-label="mail" href="mailTo:info@surajbawa.com">info@surajbawa.com</a></div>
-                            <SocialIcons size="xs" theme="social-icon-style-01" className="justify-start sm:justify-center " iconColor={props.theme === "dark" ? "light" : "dark"} data={iconData} />
+                            <SocialIcons size="xs" theme="social-icon-style-01" className="justify-start sm:justify-center  mt-[10px] " iconColor={props.theme === "dark" ? "light" : "dark"} data={iconData} />
                         </Col>
                         <Col lg={3} sm={6}>
                             <span className="mb-[20px] font-medium font-serif text-themecolor block xs:mb-[20px]">Follow Us On Isntagram</span>
@@ -71,7 +71,7 @@ const FooterStyle01 = (props) => {
                         </Col>
                         <Col md={3} className="text-right sm:text-center">
                            
-                            <p  style={{ fontSize:"0.8rem"}}> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Developed by <a aria-label="BxTechnoloies" rel="noreferrer" href="https://www.bxtechnologies.net/" className="hover:text-white" target="_blank" style={{color:"white", fontSize:".7rem", marginRight:"30px"}}> Bx Technologies</a></p>
+                            <p  style={{ fontSize:"0.8rem"}}> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Developed by <a aria-label="BxTechnoloies" rel="noreferrer" href="https://www.bxtechnologies.net/" className="hover:text-white" target="_blank" style={{color:"white", fontSize:".7rem", marginRight:"40px"}}> Bx Technologies</a></p>
                             </Col>
                     </Row>
                 </Container>
