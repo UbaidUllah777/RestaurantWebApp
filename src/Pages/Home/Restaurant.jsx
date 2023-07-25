@@ -49,7 +49,7 @@ const RestaurantPage = (props) => {
             <Col xl={8} md={10} lg={8} className="flex-col flex justify-center text-center h-[600px]">
               <div className="border-[#ca943d66] border-[8px] py-[7.5rem] px-[6.5rem] lg:p-[4.5rem] xs:p-8">
                 <i className="line-icon-French-Fries text-[70px] inline-block leading-[80px] text-[#ca943d] mb-[3.5rem]"></i>
-                <h1 className="text-[100px] leading-[95px] font-serif font-semibold text-white uppercase -tracking-[4px] mb-[3.5rem] mx-auto lg:text-[90px] lg:leading-[90px] md:text-[70px] md:leading-[65px] sm:text-[45px] sm:leading-[43px] sm:-tracking-[1px]">Delicious<br></br>Cooking</h1>
+                <h1 className="text-[70px] leading-[65px] font-serif font-semibold text-white uppercase -tracking-[4px] mb-[3.5rem] mx-auto lg:text-[60px] lg:leading-[60px] md:text-[40px] md:leading-[35px] sm:text-[25px] sm:leading-[23px] sm:-tracking-[1px]">Suraj Bawa</h1>
                 <span className="font-serif text-md uppercase tracking-[3px] text-white opacity-70 block">Experience the taste of Germany</span>
               </div>
             </Col>
