@@ -34,7 +34,7 @@ const RestaurantPage = (props) => {
       {/* Parallax Scrolling Start */}
       <div id="parallax-section" className="full-screen md:flex md:items-center landscape:md:h-[600px] overflow-hidden relative">
         <Parallax className="lg-no-parallax bg-cover absolute top-[0px] left-0 md:-top-[30px] w-full h-[100vh]" translateY={[-40, 40]} style={{ backgroundImage: `url(${bannerImage})` }}></Parallax>
-        <div className="absolute h-full w-full opacity-60 top-0 left-0 bg-darkgray"></div>
+        <div className="absolute h-full w-full opacity-60 top-0 left-0 bg-primarycolorfake"></div>
         <Container className="relative h-full">
           <Row className="justify-center items-center h-full">
             <Col xl={8} md={10} lg={8} className="flex-col flex justify-center text-center h-[600px]">

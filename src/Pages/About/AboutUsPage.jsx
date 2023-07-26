@@ -119,7 +119,7 @@ const AboutUsPage = (props) => {
       {/* Parallax Scrolling Start */}
       <div className="h-[660px] lg:h-[580px] md:h-[550px] sm:h-[500px] xs:h-[380px] flex items-center overflow-hidden relative">
         <Parallax className="lg-no-parallax bg-cover cover-background absolute top-[0px] left-0 w-full h-[100vh]" translateY={[-40, 40]} style={{ backgroundImage: `url(https://via.placeholder.com/1920x1100)` }}></Parallax>
-        <div className="absolute h-full w-full opacity-50 top-0 left-0 bg-darkgray"></div>
+        <div className="absolute h-full w-full opacity-50 top-0 left-0 bg-primarycolorfake"></div>
         <Container>
           <Row className="items-center justify-center">
             <Col md={8} xl={6} lg={7} sm={9} className="relative text-center">
