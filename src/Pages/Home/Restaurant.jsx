@@ -290,8 +290,54 @@ const RestaurantPage = (props) => {
       </m.section>
       {/* Section End */}
 
+   
+
       {/* Section Start */}
-      <section className="py-[130px] overflow-hidden lg:py-[90px] md:py-[75px] sm:py-[50px]">
+      <section className="p-0 my-[5.5rem]">
+        <Container fluid>
+          <Row xl={4} sm={2} xs={1}>
+            <m.div {...fadeInUp} className="col mt-[3.5rem] cover-background h-[650px] px-0 lg:m-0 md:h-[500px] xs:h-[450px]" style={{ backgroundImage: `url(./assets/img/home/burger.webp)` }}>
+              <div className="absolute top-0 left-0 w-full h-full opacity-70 bg-primarycolorfake"></div>
+              <div className="flex flex-col h-full p-20 text-center relative z-[1] xl:px-12 lg:px-16">
+                <span className="font-serif font-medium uppercase text-[#ca943d]">Loaded cheese</span>
+                <h2 className="heading-4 font-serif font-semibold text-white uppercase mb-0 mt-auto -tracking-[.5px]">Delicious burger</h2>
+                <div className="mt-auto">
+                  </div>
+              </div>
+            </m.div>
+            <m.div {...fadeInUp} className="cover-background h-[650px] px-0 md:h-[500px] xs:h-[450px]" style={{ backgroundImage: `url(./assets/img/home/bestPizza.jpg)` }}>
+              <div className="flex flex-col h-full justify-start p-24 text-center relative z-index-1 xl:px-10 lg:px-32 md:px-20 opacity-70 bg-primarycolorfake">
+              <span className="font-serif font-medium uppercase text-[#ca943d] block mb-[15px]">Suraj Pizza</span>
+                <h2 className="heading-4 font-serif font-semibold text-white uppercase mb-[15px] -tracking-[.5px]">Best Pizza in Town</h2>
+
+              </div>
+            </m.div>
+            <m.div {...fadeInUp} className="mt-14 cover-background h-[650px] px-0 lg:m-0 md:h-[500px] xs:h-[450px]" style={{ backgroundImage: `url(./assets/img/home/donerKabab.jpg)` }}>
+              <div className="absolute top-0 left-0 w-full h-full opacity-70 bg-primarycolorfake"></div>
+              <div className="flex flex-col h-full p-20 text-center relative z-[1] xl:px-12 lg:px-32">
+                <span className="font-serif font-medium uppercase text-[#ca943d]">Kabab lover</span>
+                <h2 className="heading-4 font-serif font-semibold text-white uppercase mb-0 mt-auto -tracking-[.5px]">Doner Kabab</h2>
+                <Link aria-label="link Barbecue festival" to="#" className="w-[40px] h-[40px] leading-[40px] mt-auto">
+               
+                </Link>
+              </div>
+            </m.div>
+            <m.div {...fadeInUp} className="cover-background h-[650px] px-0 md:h-[500px] xs:h-[450px] " style={{ backgroundImage: `url(./assets/img/home/Tortellini.jpg)` }}>
+              <div className="flex flex-col h-full justify-start py-20 px-24 text-center relative z-[1] xl:px-12 lg:px-32 opacity-70 bg-primarycolorfake">
+                <span className="font-serif font-medium uppercase text-[#ca943d] block mb-[15px]">Every saturday</span>
+                <h2 className="heading-4 font-serif font-semibold text-white uppercase -tracking-[.5px]">Tortellini</h2>
+               
+              </div>
+            </m.div>
+          </Row>
+        </Container>
+      </section>
+      {/* Section End */}
+
+   
+
+        {/* Section Start */}
+        <section className="py-[130px] overflow-hidden lg:py-[90px] md:py-[75px] sm:py-[50px]">
         <Container>
           <Row className="justify-center">
             <Col lg={4} md={6} className="text-center mb-[4.5rem] md:mb-16 sm:mb-12">
@@ -318,87 +364,6 @@ const RestaurantPage = (props) => {
         </Container>
       </section>
       {/* Section End */}
-
-      {/* Section Start */}
-      <section className="p-0">
-        <Container fluid>
-          <Row xl={4} sm={2} xs={1}>
-            <m.div {...fadeInUp} className="col mt-[3.5rem] cover-background h-[650px] px-0 lg:m-0 md:h-[500px] xs:h-[450px]" style={{ backgroundImage: `url(https://via.placeholder.com/800x1081)` }}>
-              <div className="absolute top-0 left-0 w-full h-full opacity-70 bg-primarycolorfake"></div>
-              <div className="flex flex-col h-full p-20 text-center relative z-[1] xl:px-12 lg:px-16">
-                <span className="font-serif font-medium uppercase text-[#ca943d]">Loaded cheese</span>
-                <h2 className="heading-4 font-serif font-semibold text-white uppercase mb-0 mt-auto -tracking-[.5px]">Delicious burger</h2>
-                <div className="mt-auto">
-                  <Buttons aria-label="Book seat link" href="#" className="btn-fill btn-fancy mt-auto inline-block font-medium font-serif rounded uppercase md:mb-[15px]" themeColor="#ca943d" color="#fff" size="sm" title="Book seat now" />
-                </div>
-              </div>
-            </m.div>
-            <m.div {...fadeInUp} className="cover-background h-[650px] px-0 md:h-[500px] xs:h-[450px]" style={{ backgroundImage: `url(https://via.placeholder.com/800x1081)` }}>
-              <div className="flex flex-col h-full justify-start p-24 text-center relative z-index-1 xl:px-10 lg:px-32 md:px-20">
-                <h2 className="heading-4 font-serif font-semibold text-darkgray uppercase mb-[15px] -tracking-[.5px]">Upcoming food events</h2>
-                <p className="mb-[25px]">Lorem ipsum dolor amet consectetur do tempor incididunt labore et dolore</p>
-                <div>
-                  <Buttons aria-label="all events link" href="#" className="btn-fill btn-fancy mt-[10px] font-medium font-serif rounded uppercase md:mb-[15px]" themeColor="#ca943d" color="#fff" size="sm" title="Explore all events" />
-                </div>
-              </div>
-            </m.div>
-            <m.div {...fadeInUp} className="mt-14 cover-background h-[650px] px-0 lg:m-0 md:h-[500px] xs:h-[450px]" style={{ backgroundImage: `url(https://via.placeholder.com/800x1081)` }}>
-              <div className="absolute top-0 left-0 w-full h-full opacity-70 bg-primarycolorfake"></div>
-              <div className="flex flex-col h-full p-20 text-center relative z-[1] xl:px-12 lg:px-32">
-                <span className="font-serif font-medium uppercase text-[#ca943d]">Barbeque lover</span>
-                <h2 className="heading-4 font-serif font-semibold text-white uppercase mb-0 mt-auto -tracking-[.5px]">Barbecue festival</h2>
-                <Link aria-label="link Barbecue festival" to="#" className="w-[40px] h-[40px] leading-[40px] bg-[#ca943d] rounded-full self-center mt-auto">
-                  <i className="fas fa-arrow-right text-sm text-white"></i>
-                </Link>
-              </div>
-            </m.div>
-            <m.div {...fadeInUp} className="cover-background h-[650px] px-0 md:h-[500px] xs:h-[450px]" style={{ backgroundImage: `url(https://via.placeholder.com/800x1081)` }}>
-              <div className="flex flex-col h-full justify-start py-20 px-24 text-center relative z-[1] xl:px-12 lg:px-32 ">
-                <span className="font-serif font-medium uppercase text-darkgray block mb-[15px]">Every saturday</span>
-                <h2 className="heading-4 font-serif font-semibold text-white uppercase -tracking-[.5px]">Healthy cooking night</h2>
-                <Link aria-label="Healthy cooking night" to="#" className="w-[40px] h-[40px] leading-[40px] bg-white rounded-full self-center">
-                  <i className="fas fa-arrow-right text-sm text-black"></i>
-                </Link>
-              </div>
-            </m.div>
-          </Row>
-        </Container>
-      </section>
-      {/* Section End */}
-
-      {/* Section Start */}
-      <section className="py-[160px] overflow-hidden lg:py-[120px] md:py-[95px] sm:py-[80px]">
-        <Container>
-          <Row lg={4} sm={2} xs={1}>
-            <m.div  {...{ ...fadeIn, transition: { delay: 0.2 } }} className="text-center md:mb-[40px]" >
-              <i className="feather-map-pin text-[28px] text-[#ca943d] mb-[25px] sm:mb-[10px] block"></i>
-              <div className="text-darkgray uppercase text-md font-semibold font-serif tracking-[1px] mb-[10px]">Contact us</div>
-              <p className="w-[75%] lg:w-full md:w-[60%] sm:w-[75%] mx-auto">401 Broadway, 24th Floor New York, NY 10013.</p>
-            </m.div>
-            <m.div {...{ ...fadeIn, transition: { delay: 0.4 } }} className="text-center md:mb-[40px]">
-              <i className="feather-phone-call text-[28px] text-[#ca943d] mb-[25px] sm:mb-[10px] block"></i>
-              <div className="text-darkgray uppercase text-md font-semibold font-serif tracking-[1px] mb-[10px]">Let's Talk</div>
-              <p className="w-[70%] lg:w-full mx-auto">Phone: 1-800-222-000<br />Fax: 1-800-222-002</p>
-            </m.div>
-            <m.div {...{ ...fadeIn, transition: { delay: 0.6 } }} className="text-center xs:mb-[40px]">
-              <i className="feather-mail text-[28px] text-[#ca943d] mb-[25px] sm:mb-[10px] block"></i>
-              <div className="text-darkgray uppercase text-md font-semibold font-serif tracking-[1px] mb-[10px] sm:mb-0">Tickets info</div>
-              <p className="w-[70%] lg:w-full mx-auto">
-                <a aria-label="gmail link" rel="noreferrer" href="mailto:info@yourdomain.com" className="hover:text-[#ca943d]">info@yourdomain.com</a><br />
-                <a aria-label="gmail link" rel="noreferrer" href="mailto:hr@yourdomain.com" className="hover:text-[#ca943d]">hr@yourdomain.com</a>
-              </p>
-            </m.div>
-            <m.div {...{ ...fadeIn, transition: { delay: 0.8 } }} className="text-center xs:mb-[40px]">
-              <i className="feather-globe text-[28px] text-[#ca943d] text-pink mb-[25px] sm:mb-[10px] block"></i>
-              <div className="text-darkgray uppercase text-md font-semibold font-serif tracking-[1px] mb-[10px]">Event details</div>
-              <p className="w-[75%] lg:w-full md:w-[60%] sm:w-[75%] mx-auto">Lorem ipsum is simply dummy text printing</p>
-            </m.div>
-          </Row>
-        </Container>
-      </section>
-      {/* Section End */}
-
-     
 
      
 
