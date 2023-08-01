@@ -1,10 +1,7 @@
 import React from 'react'
 
 
-import bannerImage from '../../Assets/img/webp/home-restaurant-banner-01.webp'
-import MasterCheffMessageImage from "../../Assets/img/home/home-restaurant-img-13.webp"
-import MasterCheffMessageImage2 from "../../Assets/img/home/home-restaurant-img-14.webp"
-import MasterCheffMessageImage3 from "../../Assets/img/home/home-restaurant-img-15.webp"
+
 
 // Libraries
 import { Col, Container, Row } from 'react-bootstrap'
@@ -33,7 +30,7 @@ const RestaurantPage = (props) => {
 
       {/* Parallax Scrolling Start */}
       <div id="parallax-section" className="full-screen md:flex md:items-center landscape:md:h-[600px] overflow-hidden relative">
-        <Parallax className="lg-no-parallax bg-cover absolute top-[0px] left-0 md:-top-[30px] w-full h-[100vh]" translateY={[-40, 40]} style={{ backgroundImage: `url(${bannerImage})` }}></Parallax>
+        <Parallax className="lg-no-parallax bg-cover absolute top-[0px] left-0 md:-top-[30px] w-full h-[100vh]" translateY={[-40, 40]} style={{ backgroundImage: `url(./assets/img/menu/menuBanner.jpg)` }}></Parallax>
         <div className="absolute h-full w-full opacity-60 top-0 left-0 bg-primarycolorfake"></div>
         <Container className="relative h-full">
           <Row className="justify-center items-center h-full">
@@ -74,7 +71,7 @@ const RestaurantPage = (props) => {
       {/* Overlap Section End */}
 
       {/* Section Start */}
-      <section className="py-[130px] overflow-hidden lg:py-[90px] md:py-[75px] sm:py-[50px]">
+      <section className="py-[80px] overflow-hidden lg:py-[90px] md:py-[75px] sm:py-[50px]">
         <Container>
           <Row className="justify-center">
             <Col lg={4} md={6} className="text-center mb-[4.5rem] md:mb-16 sm:mb-12">
@@ -137,47 +134,10 @@ const RestaurantPage = (props) => {
       </section>
       {/* Section End */}
 
-      {/* Section Start */}
-      <section className="p-0 overflow-hidden">
-        <Container fluid className="px-0">
-          <Row className="gx-0">
-            <Col xl={6} className="p-0">
-              <m.div {...fadeIn} className="block flex flex-column flex-md-row h-full">
-                <Col md={6} className="cover-background sm:h-[700px]" style={{ backgroundImage: `url(${MasterCheffMessageImage})` }}></Col>
-                <Col md={6} className="bg-[#f8f4f0] flex flex-col justify-center text-start px-12 xl:px-[15px] lg:p-20 md:px-[2.5rem]">
-                  <img width={57} height={40} src="/assets/img/webp/home-restaurant-img-transparent-05.webp" className="self-start mb-[20px]" alt="" />
-                  <h2 className="heading-4 font-serif font-light text-darkgray -tracking-[1px] w-[85%] mb-12 xs:w-full xs:mb-[15px]">Masterchef <span className="font-semibold">message</span></h2>
-                  <span className="text-[18px] text-darkgray leading-[30px] block w-[75%] mb-[20px] xs:mb-[30px] xl:w-[80%] xs:w-full">Unique and delicious dishes from the worlds best masterchefs.</span>
-                  <p className="w-[75%] xs:w-full">Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod tempor incididunt labore et dolore magna minim veniam nostrud exercitation ullamco.</p>
-                  <img width={146} height={44} src="/assets/img/webp/home-restaurant-img-transparent-06.webp" className="w-[auto] self-start mt-[25px] pt-[25px] xs:mt-[10px]" alt="" />
-                </Col>
-              </m.div>
-            </Col>
-            <Col xl={6} className="p-0">
-              <Row className="g-0">
-                <Col xs={{ order: 1 }} sm={{ span: 6, order: 1 }} className="p-0">
-                  <m.div {...fadeIn} className="text-center px-24 py-32 xl:py-24 xl:px-16 lg:px-28 sm:px-24 bg-darkgray">
-                    <span className="font-serif font-medium text-[#ca943d] tracking-[1px] text-md block uppercase mb-[20px]">Best of recipes</span>
-                    <h3 className="heading-4 font-serif text-white mb-0"><span className="font-semibold md:block">Delicious</span> breakfast recipes</h3>
-                  </m.div>
-                </Col>
-                <m.div {...{ ...fadeIn, transition: { delay: 0.2 } }} className="col-12 col-sm-6 order-2 cover-background xs:h-[300px]" style={{ backgroundImage: `url(${MasterCheffMessageImage2})` }}></m.div>
-                <m.div {...{ ...fadeIn, transition: { delay: 0.4 } }} className="col-12 col-sm-6 order-4 order-sm-3 px-0 cover-background xs:h-[300px]" style={{ backgroundImage: `url(${MasterCheffMessageImage3})` }}></m.div>
-                <Col xs={{ order: 2 }} sm={{ span: 6, order: 4 }}>
-                  <m.div {...{ ...fadeIn, transition: { delay: 0.6 } }} className="text-center px-24 py-32 xl:py-24 xl:px-16 lg:px-28 sm:px-24">
-                    <span className="font-serif font-medium text-[#ca943d] tracking-[1px] text-md block uppercase mb-[20px]">Best of foods</span>
-                    <h3 className="heading-4 font-serif text-darkgray mb-0"><span className="font-semibold md:block">Healthy</span> energetic burger</h3>
-                  </m.div>
-                </Col>
-              </Row>
-            </Col>
-          </Row>
-        </Container>
-      </section>
-      {/* Section End */}
+      
 
       {/* Section Start */}
-      <section className="py-[130px] overflow-hidden lg:py-[90px] md:py-[75px] sm:py-[50px]">
+      <section className="py-[50px] overflow-hidden lg:py-[90px] md:py-[75px] sm:py-[50px]">
         <Container>
           <Row className="justify-center">
             <Col lg={4} md={6} className="text-center mb-[4.5rem] md:mb-16 sm:mb-12">
@@ -229,84 +189,9 @@ const RestaurantPage = (props) => {
 
       
 
-      {/* Section Start */}
-      <section className="p-0">
-        <Container fluid>
-          <Row xl={4} sm={2} xs={1}>
-            <m.div {...fadeInUp} className="col mt-[3.5rem] cover-background h-[650px] px-0 lg:m-0 md:h-[500px] xs:h-[450px]" style={{ backgroundImage: `url(https://via.placeholder.com/800x1081)` }}>
-              <div className="absolute top-0 left-0 w-full h-full opacity-70 bg-darkgray"></div>
-              <div className="flex flex-col h-full p-20 text-center relative z-[1] xl:px-12 lg:px-16">
-                <span className="font-serif font-medium uppercase text-[#ca943d]">Loaded cheese</span>
-                <h2 className="heading-4 font-serif font-semibold text-white uppercase mb-0 mt-auto -tracking-[.5px]">Delicious burger</h2>
-                <div className="mt-auto">
-                  <Buttons aria-label="Book seat link" href="#" className="btn-fill btn-fancy mt-auto inline-block font-medium font-serif rounded uppercase md:mb-[15px]" themeColor="#ca943d" color="#fff" size="sm" title="Book seat now" />
-                </div>
-              </div>
-            </m.div>
-            <m.div {...fadeInUp} className="cover-background h-[650px] px-0 md:h-[500px] xs:h-[450px]" style={{ backgroundImage: `url(https://via.placeholder.com/800x1081)` }}>
-              <div className="flex flex-col h-full justify-start p-24 text-center relative z-index-1 xl:px-10 lg:px-32 md:px-20">
-                <h2 className="heading-4 font-serif font-semibold text-darkgray uppercase mb-[15px] -tracking-[.5px]">Upcoming food events</h2>
-                <p className="mb-[25px]">Lorem ipsum dolor amet consectetur do tempor incididunt labore et dolore</p>
-                <div>
-                  <Buttons aria-label="all events link" href="#" className="btn-fill btn-fancy mt-[10px] font-medium font-serif rounded uppercase md:mb-[15px]" themeColor="#ca943d" color="#fff" size="sm" title="Explore all events" />
-                </div>
-              </div>
-            </m.div>
-            <m.div {...fadeInUp} className="mt-14 cover-background h-[650px] px-0 lg:m-0 md:h-[500px] xs:h-[450px]" style={{ backgroundImage: `url(https://via.placeholder.com/800x1081)` }}>
-              <div className="absolute top-0 left-0 w-full h-full opacity-70 bg-darkgray"></div>
-              <div className="flex flex-col h-full p-20 text-center relative z-[1] xl:px-12 lg:px-32">
-                <span className="font-serif font-medium uppercase text-[#ca943d]">Barbeque lover</span>
-                <h2 className="heading-4 font-serif font-semibold text-white uppercase mb-0 mt-auto -tracking-[.5px]">Barbecue festival</h2>
-                <Link aria-label="link Barbecue festival" to="#" className="w-[40px] h-[40px] leading-[40px] bg-[#ca943d] rounded-full self-center mt-auto">
-                  <i className="fas fa-arrow-right text-sm text-white"></i>
-                </Link>
-              </div>
-            </m.div>
-            <m.div {...fadeInUp} className="cover-background h-[650px] px-0 md:h-[500px] xs:h-[450px]" style={{ backgroundImage: `url(https://via.placeholder.com/800x1081)` }}>
-              <div className="flex flex-col h-full justify-start py-20 px-24 text-center relative z-[1] xl:px-12 lg:px-32">
-                <span className="font-serif font-medium uppercase text-darkgray block mb-[15px]">Every saturday</span>
-                <h2 className="heading-4 font-serif font-semibold text-white uppercase -tracking-[.5px]">Healthy cooking night</h2>
-                <Link aria-label="Healthy cooking night" to="#" className="w-[40px] h-[40px] leading-[40px] bg-white rounded-full self-center">
-                  <i className="fas fa-arrow-right text-sm text-black"></i>
-                </Link>
-              </div>
-            </m.div>
-          </Row>
-        </Container>
-      </section>
-      {/* Section End */}
+     
 
-      {/* Section Start */}
-      <section className="py-[160px] overflow-hidden lg:py-[120px] md:py-[95px] sm:py-[80px]">
-        <Container>
-          <Row lg={4} sm={2} xs={1}>
-            <m.div  {...{ ...fadeIn, transition: { delay: 0.2 } }} className="text-center md:mb-[40px]" >
-              <i className="feather-map-pin text-[28px] text-[#ca943d] mb-[25px] sm:mb-[10px] block"></i>
-              <div className="text-darkgray uppercase text-md font-semibold font-serif tracking-[1px] mb-[10px]">Contact us</div>
-              <p className="w-[75%] lg:w-full md:w-[60%] sm:w-[75%] mx-auto">401 Broadway, 24th Floor New York, NY 10013.</p>
-            </m.div>
-            <m.div {...{ ...fadeIn, transition: { delay: 0.4 } }} className="text-center md:mb-[40px]">
-              <i className="feather-phone-call text-[28px] text-[#ca943d] mb-[25px] sm:mb-[10px] block"></i>
-              <div className="text-darkgray uppercase text-md font-semibold font-serif tracking-[1px] mb-[10px]">Let's Talk</div>
-              <p className="w-[70%] lg:w-full mx-auto">Phone: 1-800-222-000<br />Fax: 1-800-222-002</p>
-            </m.div>
-            <m.div {...{ ...fadeIn, transition: { delay: 0.6 } }} className="text-center xs:mb-[40px]">
-              <i className="feather-mail text-[28px] text-[#ca943d] mb-[25px] sm:mb-[10px] block"></i>
-              <div className="text-darkgray uppercase text-md font-semibold font-serif tracking-[1px] mb-[10px] sm:mb-0">Tickets info</div>
-              <p className="w-[70%] lg:w-full mx-auto">
-                <a aria-label="gmail link" rel="noreferrer" href="mailto:info@yourdomain.com" className="hover:text-[#ca943d]">info@yourdomain.com</a><br />
-                <a aria-label="gmail link" rel="noreferrer" href="mailto:hr@yourdomain.com" className="hover:text-[#ca943d]">hr@yourdomain.com</a>
-              </p>
-            </m.div>
-            <m.div {...{ ...fadeIn, transition: { delay: 0.8 } }} className="text-center xs:mb-[40px]">
-              <i className="feather-globe text-[28px] text-[#ca943d] text-pink mb-[25px] sm:mb-[10px] block"></i>
-              <div className="text-darkgray uppercase text-md font-semibold font-serif tracking-[1px] mb-[10px]">Event details</div>
-              <p className="w-[75%] lg:w-full md:w-[60%] sm:w-[75%] mx-auto">Lorem ipsum is simply dummy text printing</p>
-            </m.div>
-          </Row>
-        </Container>
-      </section>
-      {/* Section End */}
+     
 
 
 

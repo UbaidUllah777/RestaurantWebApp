@@ -23,7 +23,7 @@ const IconWithText = (props) => {
           return (
             <m.div key={i} className={`col${props.theme ? ` ${props.theme}` : ""}${props.className ? ` ${props.className}` : ""}`} {...{ ...props.animation, transition: { delay: i * props.animationDelay, ease: props.animationTransition, duration: props.animationDuration } }}>
               <div className="rounded-md w-full">
-                {
+                {/* {
                   item.img ? (
                     <img height={42} width={51} className="inline-block items-center justify-center mb-[30px]" src={item.img} alt="featurebox" />
                   )
@@ -34,7 +34,7 @@ const IconWithText = (props) => {
                       item.textIcon ? (<span className="text-basecolor inline-block icon-text">{item.textIcon}</span>)
                         :
                         <span className="text-basecolor inline-block icon-text">{`${i <= 9 ? "0" : ""}${i + 1}`}</span>
-                }
+                } */}
 
                 <div className='feature-box-content'>
                   {item.title && <span className="font-medium title font-serif">{item.title}</span>}
