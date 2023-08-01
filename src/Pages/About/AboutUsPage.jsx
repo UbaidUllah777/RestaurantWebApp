@@ -3,14 +3,9 @@ import React from 'react'
 // Components
 import { fadeIn } from '../../Functions/GlobalAnimations'
 import Buttons from '../../Components/Button/Buttons'
-import Clients from '../../Components/Clients/Clients'
-import FancyTextBox from '../../Components/FancyTextBox/FancyTextBox'
-import Team from '../../Components/Team/Team'
 
 import IconWithText from '../../Components/IconWithText/IconWithText'
-import Lists from '../../Components/Lists/Lists'
-import Counter from '../../Components/Counters/Counter'
-import Overlap from '../../Components/Overlap/Overlap'
+
 import CustomModal from '../../Components/CustomModal'
 
 // Libraries
@@ -23,8 +18,7 @@ import { Link as ScrollTo } from "react-scroll"
 
 // Data
 
-import { fancyTextBox04 } from '../../Components/FancyTextBox/FancyTextBoxData';
-import { TeamData04 } from '../../Components/Team/TeamData';
+ 
 
 const TestimonialsCarouselData = [
   {
