@@ -83,7 +83,7 @@ const RestaurantPage = (props) => {
       </m.section>
       {/* Section End */}
 
-      {/* Overlap Section Start */}
+      {/* POPULAR MENU Section Start */}
       <section className="bg-[#f8f4f0] pb-[130px] xl:pb-[90px] lg:pb-[75px] sm:py-[50px]">
         <Container fluid className="mb-20">
           <Row className="justify-center">
@@ -110,9 +110,11 @@ const RestaurantPage = (props) => {
           </m.div>
         </Container>
       </section>
-      {/* Overlap Section End */}
+      {/* POPULAR MENU Section End */}
 
-      {/* Section Start */}
+      
+
+      {/* SPECIAL DISHES Section Start */}
       <section className="py-[130px] overflow-hidden lg:py-[90px] md:py-[75px] sm:py-[50px]">
         <Container>
           <Row className="justify-center">
@@ -174,9 +176,11 @@ const RestaurantPage = (props) => {
           </Row>
         </Container>
       </section>
-      {/* Section End */}
+      {/*  SPECIAL DISHES Section End */}
 
-      {/* Section Start */}
+
+
+      {/*  Masterchef message Section Start */}
       <section className="p-0 overflow-hidden">
         <Container fluid className="px-0">
           <Row className="gx-0">
@@ -213,7 +217,7 @@ const RestaurantPage = (props) => {
           </Row>
         </Container>
       </section>
-      {/* Section End */}
+      {/*Masterchef message  Section End */}
 
       {/* Section Start */}
       <section className="py-[130px] overflow-hidden lg:py-[90px] md:py-[75px] sm:py-[50px]">
