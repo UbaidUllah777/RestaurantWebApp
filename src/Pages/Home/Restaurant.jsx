@@ -18,18 +18,18 @@ import { Link as ScrollTo } from "react-scroll"
 
 // Components
 
-
+import AvailableMeals from '../../Components/Meals/AvailableMeals'
 
 import Buttons from '../../Components/Button/Buttons'
 import Overlap from '../../Components/Overlap/Overlap'
-import Tab03 from '../../Components/Tab/Tab03'
+// import Tab03 from '../../Components/Tab/Tab03'
 import Testimonials from '../../Components/Testimonials/Testimonials'
 import TextSlider03 from '../../Components/TextSlider/TextSlider03'
 
 // Data
 import { TestimonialsData04 } from '../../Components/Testimonials/TestimonialsData'
 import { TextSliderData03 } from '../../Components/TextSlider/TextSliderData'
-import { TabData03 } from '../../Components/Tab/TabData'
+// import { TabData03 } from '../../Components/Tab/TabData'
 
 // Animations
 import { fadeIn, fadeInUp, zoomIn } from "../../Functions/GlobalAnimations"
@@ -106,7 +106,7 @@ const RestaurantPage = (props) => {
             </Col>
           </m.div>
           <m.div className="row xs:justify-center restaurant-tab-style-03" {...fadeIn}>
-            <Tab03 data={TabData03} />
+            <AvailableMeals />
           </m.div>
         </Container>
       </section>
