@@ -9,7 +9,7 @@ import pizzaImage from "../../Assets/img/items/pizza/pizza.jpeg";
 import DonerKebap from "../../Assets/img/items/donerKabab/Döner-Kebap.jpg";
 import MealsItem from "./MealsItem/MealsItem";
 
-export const SURAJMEALS = [
+const SURAJMEALS = [
   // Pizza
   {
     Mealid: "pizzaid",
@@ -19,7 +19,7 @@ export const SURAJMEALS = [
       {
         variantId: "p1",
         variantPrice: "10.00",
-        variantImg: pizzaImage,
+        variantImg: "/assets/img/menuItems/pizza/pizza.jpeg",
         variantTitle: "Pizza One",
         variantContent: "Ipsum is simply dolor text printing",
       },
@@ -53,9 +53,13 @@ export const SURAJMEALS = [
       {
         variantId: "dk1",
         variantPrice: "08.00",
-        variantImg: DonerKebap,
+        variantImg: "/assets/img/menuItems/donerKabab/Döner-Kebap.jpg",
         variantTitle: "Doner Kabab one",
         variantContent: "Lorem ipsum has been the industry",
+        badge: {
+          variantTitle: "hot",
+          color: "#d74a3a",
+        },
       },
       {
         variantId: "dk2",

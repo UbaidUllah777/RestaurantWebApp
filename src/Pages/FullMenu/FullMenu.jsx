@@ -11,16 +11,15 @@ import { m } from "framer-motion"
 
 
 // Components
-import Buttons from '../../Components/Button/Buttons'
-import Tab03 from '../../Components/Tab/Tab03'
+
+import AvailableMeals from '../../Components/Meals/AvailableMeals'
 
 
 // Data
 
-import { TabData03 } from '../../Components/Tab/TabData'
 
 // Animations
-import { fadeIn, fadeInUp, zoomIn } from "../../Functions/GlobalAnimations"
+import { fadeIn, zoomIn } from "../../Functions/GlobalAnimations"
 
 const RestaurantPage = (props) => {
 
@@ -64,7 +63,7 @@ const RestaurantPage = (props) => {
             </Col>
           </m.div>
           <m.div className="row xs:justify-center restaurant-tab-style-03" {...fadeIn}>
-            <Tab03 data={TabData03} />
+          <AvailableMeals />
           </m.div>
         </Container>
       </section>

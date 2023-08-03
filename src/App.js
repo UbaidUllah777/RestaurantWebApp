@@ -36,13 +36,14 @@ const Footer = lazy(() => import("./Pages/Footer/FooterStyle01Page"));
 const RestaurantAboutUsPage = lazy(() => import("./Pages/About/AboutUsPage"));
 
 //Menu page
-
 const RestaurantMenuPage = lazy(() => import("./Pages/FullMenu/FullMenu"));
-// Contact us
 
+// Contact us
 const RestaurantContactUsPage = lazy(() =>
   import("./Pages/Contact/ContactUsClassicPage")
 );
+
+//Component Function
 
 function App(props) {
   const [headerHeight, setHeaderHeight] = useState(0);

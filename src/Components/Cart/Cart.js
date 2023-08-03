@@ -4,6 +4,7 @@ import Buttons from "../Button/Buttons";
 
 // Componenets
 import CartContext from "../../store/cart-context";
+import CartItem from "./CartItem";
 
 const Cart = (props) => {
   const cartCtx = useContext(CartContext);
@@ -12,33 +13,19 @@ const Cart = (props) => {
 
   const cartHasItems = cartCtx.items.length > 0;
 
-  const cartItemRemoveHandler = () => {};
-  const cartItemAddHandler = () => {};
+  const cartItemRemoveHandler = (variantId) => {
+    cartCtx.removeItem(variantId);
+  };
+  const cartItemAddHandler = (item) => {
+    cartCtx.addItem({ item, amount: 1 });
+  };
 
   const cartItems = cartCtx.items.map((item) => (
-    <li key={item.VariantId} className="cart-item items-center">
-      <Link aria-label="link" to="#" className="font-serif close">
-        {" "}
-        ×{" "}
-      </Link>
-      <div className="product-image">
-        <Link aria-label="link" to="#">
-          <img
-            src="https://via.placeholder.com/150x191"
-            className="cart-thumb"
-            alt="cart-product"
-            width={50}
-            height={67}
-          />
-        </Link>
-      </div>
-      <div className="product-detail font-serif">
-        <Link aria-label="link" to="#">
-          {item.variantTitle}
-        </Link>
-        <span className="item-ammount">{item.variantPrice}</span>
-      </div>
-    </li>
+    <CartItem
+      item={item}
+      onRemove={cartItemRemoveHandler.bind(null, item.VariantId)}
+      onAdd={cartItemAddHandler.bind(null, item)}
+    />
   ));
   const numberOfCartItems = cartCtx.items.reduce((curNumber, item) => {
     return curNumber + item.amount;
@@ -61,7 +48,14 @@ const Cart = (props) => {
       </Link>
       <ul id="myTable" className="dropdown-menu block cart-item-list">
         {/* Cart item */}
-        {cartItems}
+        <ul
+          style={{
+            maxHeight: "15rem",
+            overflowY: "scroll",
+          }}
+        >
+          {cartItems}
+        </ul>
         {/* TotalAmount */}
         <li className="cart-item cart-total">
           {cartHasItems && (
