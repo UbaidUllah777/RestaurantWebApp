@@ -213,7 +213,12 @@ const AboutUsPage = (props) => {
               <h5 className="font-serif text-darkgray font-medium">Flavors Without Borders: Suraj Bawa's Gallery of Cross-Continental Cuisine </h5>
               <p>Welcome to the Suraj Bawa gallery, where we proudly showcase our culinary masterpieces that celebrate the fusion of global flavors. Immerse yourself in a visual feast of our delectable fast food creations like pizzas and more, along with the rich traditions of Indian and German cuisines. Get a glimpse of the delightful experiences that await you at our restaurant in Duisburg, Germany.</p>
               
-              <Buttons href="/menu" className="btn-fill font-medium font-serif rounded-[4px] uppercase mt-[30px] md:mb-[15px]" themeColor="#0038e3" color="#fff" size="md" title="Check Our Menu" />
+              <Buttons to="/menu"
+                      className="font-medium font-serif uppercase rounded-none lg:mb-[15px] landscape:lg:mb-[15px]"
+                      themeColor={["#e42564", "#fa6259"]}
+                      size="sm"
+                      color="#fff" 
+                      title="Check Our Menu" />
             </Col>
           </Row>
         </Container>

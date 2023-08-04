@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 
+import Buttons from "../Button/Buttons";
 import classes from "./MealItemForm.module.css";
 
 const MealItemForm = (props) => {
@@ -39,7 +40,16 @@ const MealItemForm = (props) => {
         step="1"
         defaultValue="1"
       />
-      <button>+Add to Cart</button>
+
+      <Buttons
+        ariaLabel="button"
+        className="font-medium font-serif uppercase rounded-none lg:mb-[15px] landscape:lg:mb-[15px]"
+        themeColor={["#e42564", "#fa6259"]}
+        size="sm"
+        color="#fff"
+        title="+Add to Cart"
+        type="submit"
+      />
       {!amountIsValid && <p>item muste be (1-5)</p>}
     </form>
   );

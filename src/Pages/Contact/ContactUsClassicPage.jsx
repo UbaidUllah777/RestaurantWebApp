@@ -107,7 +107,7 @@ const ContactUsClassicPage = (props) => {
                         </Checkbox>
                       </Col>
                       <Col className="text-right sm:text-center">
-                        <Buttons type="submit" className={`text-xs tracking-[1px] rounded-none py-[12px] px-[28px] uppercase${isSubmitting ? " loading" : ""}`} themeColor={["#b884fd", "#fe73a8", "b884fd"]} size="md" color="#fff" title="Send Message" />
+                        <Buttons type="submit" className={` font-medium font-serif  rounded-none lg:mb-[15px] landscape:lg:mb-[15px] uppercase${isSubmitting ? " loading" : ""}`}  themeColor={["#e42564", "#fa6259"]} size="sm" color="#fff" title="Send Message" />
                       </Col>
                     </Row>
                     <AnimatePresence>

@@ -2,7 +2,7 @@
     text-align: right;
   }
   
-  .form button {
+  /* .form button {
     font: inherit;
     cursor: pointer;
     border: 1px solid #9c0434;
@@ -10,7 +10,7 @@
     padding: 0.25rem 0.75rem;
     border-radius: 10px;
     font-weight: normal;
-  }   
+  }    */
   .form input {
     font: inherit;
     border: 1px solid #9c0434;
@@ -21,9 +21,9 @@
   }
 
   
-  .form button:hover,
+  /* .form button:hover,
   .form button:active {
     background-color: #9c0434;
     border-color: #9c0434;
     color: aliceblue;
-  }
+  } */

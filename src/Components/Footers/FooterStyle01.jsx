@@ -38,15 +38,15 @@ const FooterStyle01 = (props) => {
             <div className="py-[5%] lg:py-[95px] md:py-[50px]">
                 <Container>
                     <Row>
-                        <FooterMenu data={FooterData.slice(0, 2)} lg={3} sm={6} className="xl:px-[15px] md:mb-[40px] xs:mb-[25px]" titleClass="capitalize" />
-                        <Col lg={3} sm={6} className="xs:mb-[25px]">
+                        <FooterMenu data={FooterData.slice(0, 2)} lg={2} sm={4} className="xl:px-[15px] md:mb-[40px] xs:mb-[25px]" titleClass="capitalize" />
+                        <Col lg={5} sm={8} className="xs:mb-[25px]">
                             <span className="mb-[20px] font-serif block font-medium text-themecolor xs:mb-[10px]">Reach Us</span>
-                            <p className="w-[85%] mb-[15px]">Suraj Bawa, Duisburg Germany</p>
-                            <div><i className="feather-phone-call text-sm mr-[10px] text-themecolor"></i>+1 234 567 8910</div>
+                            <p className="w-[85%] mb-[15px]">Suraj Bawa, Strernbuschweg 77, (IMO Autowasche) 47057 Duisburg-Neudorf</p>
+                            <div><i className="feather-phone-call text-sm mr-[10px] text-themecolor"></i>+49 0203 377770</div>
                             <div><i className="feather-mail text-sm mr-[10px] text-themecolor"></i><a aria-label="mail" href="mailTo:info@surajbawa.com">info@surajbawa.com</a></div>
                             <SocialIcons size="xs" theme="social-icon-style-01" className="justify-start sm:justify-center  mt-[10px] " iconColor={props.theme === "dark" ? "light" : "dark"} data={iconData} />
                         </Col>
-                        <Col lg={3} sm={6}>
+                        <Col lg={3} sm={4}>
                             <span className="mb-[20px] font-medium font-serif text-themecolor block xs:mb-[20px]">Follow Us On Isntagram</span>
                             <div className="w-full inline-block">
                                 <StaticInstagram total_posts={3} />

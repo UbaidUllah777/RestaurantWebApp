@@ -18,8 +18,9 @@ import { Link as ScrollTo } from "react-scroll"
 
 // Components
 
-import AvailableMeals from '../../Components/Meals/AvailableMeals'
+// import AvailableMeals from '../../Components/Meals/AvailableMeals'
 
+import { PopularMeals } from '../../Components/Meals/AvailableMeals'
 import Buttons from '../../Components/Button/Buttons'
 import Overlap from '../../Components/Overlap/Overlap'
 // import Tab03 from '../../Components/Tab/Tab03'
@@ -106,7 +107,7 @@ const RestaurantPage = (props) => {
             </Col>
           </m.div>
           <m.div className="row xs:justify-center restaurant-tab-style-03" {...fadeIn}>
-            <AvailableMeals />
+            <PopularMeals />
           </m.div>
         </Container>
       </section>
