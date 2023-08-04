@@ -187,13 +187,13 @@ const RestaurantPage = (props) => {
           <Row className="gx-0">
             <Col xl={6} className="p-0">
               <m.div {...fadeIn} className="block flex flex-column flex-md-row h-full">
-                <Col md={6} className="cover-background sm:h-[700px]" style={{ backgroundImage: `url(${MasterCheffMessageImage})` }}></Col>
+                <Col md={6} className="cover-background sm:h-[700px]" style={{ backgroundImage: `url(/assets/img/home/bestPizza.jpg)` }}></Col>
                 <Col md={6} className="bg-[#f8f4f0] flex flex-col justify-center text-start px-12 xl:px-[15px] lg:p-20 md:px-[2.5rem]">
                   <img width={57} height={40} src="/assets/img/webp/home-restaurant-img-transparent-05.webp" className="self-start mb-[20px]" alt="" />
-                  <h2 className="heading-4 font-serif font-light text-darkgray -tracking-[1px] w-[85%] mb-12 xs:w-full xs:mb-[15px]">Masterchef <span className="font-semibold">message</span></h2>
+                  <h2 className="heading-4 font-serif font-light text-darkgray -tracking-[1px] w-[85%] mb-12 xs:w-full xs:mb-[15px]">SURAJ <span className="font-semibold">message</span></h2>
                   <span className="text-[18px] text-darkgray leading-[30px] block w-[75%] mb-[20px] xs:mb-[30px] xl:w-[80%] xs:w-full">Unique and delicious dishes from the worlds best masterchefs.</span>
                   <p className="w-[75%] xs:w-full">Lorem ipsum dolor sit amet consectetur adipiscing elit eiusmod tempor incididunt labore et dolore magna minim veniam nostrud exercitation ullamco.</p>
-                  <img width={146} height={44} src="/assets/img/webp/home-restaurant-img-transparent-06.webp" className="w-[auto] self-start mt-[25px] pt-[25px] xs:mt-[10px]" alt="" />
+                  <img width={146} height={44} src="/assets/img/home/surajSign.png" className="w-[auto] self-start mt-[25px] pt-[25px] xs:mt-[10px]" alt="" />
                 </Col>
               </m.div>
             </Col>
