@@ -41,47 +41,7 @@ const TestimonialsCarouselData = [
   },
 ]
 
-const ListData = [
-  {
-  //  icon: "feather-arrow-right-circle",
-    content: "Beautiful and easy to understand animations"
-  },
-  {
-  //  icon: "feather-arrow-right-circle",
-    content: "Theme advantages are pixel perfect design",
-  },
-  {
-  //  icon: "feather-arrow-right-circle",
-    content: "Find more creative ideas for your projects",
-  },
-]
 
-const CounterData05 = [
-  {
-    number: {
-      text: "1227",
-      class: "text-fastblue"
-    },
-    title: "Winning awards",
-    content: "For creative design",
-  },
-  {
-    number: {
-      text: "1947",
-      class: "text-fastblue"
-    },
-    title: "Working hours",
-    content: "Desperate for work",
-  },
-  {
-    number: {
-      text: "1587",
-      class: "text-fastblue"
-    },
-    title: "Happy clients",
-    content: "We love clients",
-  },
-]
 const IconWithTextData = [
   {
   //  icon: "line-icon-Navigation-LeftWindow text-gradient bg-gradient-to-r from-[#556fff] via-[#e05fc4] to-[#ff798e]",
@@ -139,7 +99,7 @@ const AboutUsPage = (props) => {
               <div className="justify-center h-full w-full flex flex-col items-start bg-fastblue px-[5.5rem] lg:px-[3rem] md:p-16">
                 <span className="text-xlg lg:text-lg lg:leading-[26px] font-medium text-white mb-[20px] block">Discover Suraj Bawa, a culinary haven in Duisburg, Germany! </span>
                 <p className="text-white font-sans opacity-70 mb-[20px] xs:mb-[15px]">Explore a world of flavors with our enticing selection of cuisines. From freshly baked pizzas to rich Indian spices and savory German specialties, our diverse menu satisfies every craving.</p>
-                <Buttons href="/imprint" className="font-medium font-serif uppercase btn-link after:h-[2px] md:text-md md:mb-[15px] after:bg-[#fff] hover:text-[#fff]" color="#fff" title="Restaurant overview" />
+                <Buttons ariaLabel="button" to="/imprint" className="mx-[10px] font-medium font-serif uppercase btn-link after:h-[2px] md:text-md after:bg-[#fff] hover:text-white  text-white !text-md" color="#fff" title="Restaurant Overview" />
               </div>
             </Col>
             <Col lg={4} md={6} className="flex flex-col pr-0">

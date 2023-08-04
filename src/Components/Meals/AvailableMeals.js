@@ -5,7 +5,7 @@ import React from "react";
 
 // Libraries
 import { Col, Nav, Row, Tab } from "react-bootstrap";
-import pizzaImage from "../../Assets/img/items/pizza/pizza.jpeg";
+
 import DonerKebap from "../../Assets/img/items/donerKabab/Döner-Kebap.jpg";
 import MealsItem from "./MealsItem/MealsItem";
 
@@ -13,110 +13,190 @@ const SURAJMEALS = [
   // Pizza
   {
     Mealid: "pizzaid",
-    MealTitle: "PIZZA",
+    MealTitle: "PIZZA ",
     Mealicons: "",
     isPopular: true,
+    isSizesAvailable: true,
     MealVariants: [
+      // 1-
+      // Margherita "mit Käse (klein 26cm)
       {
-        variantId: "p1",
-        variantPrice: "10.00",
+        variantId: "Margheritaklein26cm",
+        variantPrice: "04.00",
         variantImg: "/assets/img/menuItems/pizza/pizza.jpeg",
-        variantTitle: "Pizza One",
-        variantContent: "Ipsum is simply dolor text printing",
+        variantTitle: "Margherita",
+        variantContent: "mit Käse (klein 26cm)",
       },
+      // {
+      //   variantId: "Margherita",
+      //   variantPrice: {
+      //     klein26cm: "04.00",
+      //     groß30cm: "06.00",
+      //     jumbo40cm: "12.00",
+      //   },
+      //   variantTitle: "Margherita",
+      //   variantSize: "Klein 26cm",
+      // },
+      // Margheritamit Käse (groß 30cm)
       {
-        variantId: "p2",
+        variantId: "Margheritagroß30cm",
         variantPrice: "06.00",
-        variantImg: pizzaImage,
-        variantTitle: "Pizza Two",
-        variantContent: "Ipsum is simply dolor text printing",
+        variantImg: "/assets/img/menuItems/pizza/pizza.jpeg",
+        variantTitle: "Margherita",
+        variantContent: "mit Käse (groß 30cm)",
       },
+      // Margherita mit Käse (Jumbo 40cm)
       {
-        variantId: "p3",
-        variantPrice: "10.00",
-        variantImg: pizzaImage,
-        variantTitle: "Pizza Three",
-        variantContent: "Printing and typesetting industry",
+        variantId: "MargheritaJumbo40cm",
+        variantPrice: "12.00",
+        variantImg: "/assets/img/menuItems/pizza/pizza.jpeg",
+        variantTitle: "Margherita",
+        variantContent: "mit Käse (Jumbo 40cm)",
+      },
 
+      // 2-
+      // Cipolla "mit Käse (klein 26cm)
+      {
+        variantId: "Cipollaklein26cm",
+        variantPrice: "05.00",
+        variantImg: "/assets/img/menuItems/pizza/pizza.jpeg",
+        variantTitle: "Cipolla",
+        variantContent: "mit Käse (klein 26cm)",
         badge: {
           variantTitle: "new",
           color: "#70a967",
         },
       },
+      // Cipollamit Käse (groß 30cm)
+      {
+        variantId: "Cipollagroß30cm",
+        variantPrice: "07.50",
+        variantImg: "/assets/img/menuItems/pizza/pizza.jpeg",
+        variantTitle: "Cipolla",
+        variantContent: "mit Käse (groß 30cm)",
+      },
+      // Cipolla mit Käse (Jumbo 40cm)
+      {
+        variantId: "CipollaJumbo40cm",
+        variantPrice: "14.50",
+        variantImg: "/assets/img/menuItems/pizza/pizza.jpeg",
+        variantTitle: "Cipolla",
+        variantContent: "mit Käse (Jumbo 40cm)",
+      },
+
+      // 3-
+      // Salami "mit Käse (klein 26cm)
+      {
+        variantId: "Salamiklein26cm",
+        variantPrice: "05.00",
+        variantImg: "/assets/img/menuItems/pizza/pizza.jpeg",
+        variantTitle: "Salami",
+        variantContent: "mit Käse (klein 26cm)",
+      },
+      // Salamimit Käse (groß 30cm)
+      {
+        variantId: "Salamigroß30cm",
+        variantPrice: "07.50",
+        variantImg: "/assets/img/menuItems/pizza/pizza.jpeg",
+        variantTitle: "Salami",
+        variantContent: "mit Käse (groß 30cm)",
+        badge: {
+          variantTitle: "new",
+          color: "#70a967",
+        },
+      },
+      // Salami mit Käse (Jumbo 40cm)
+      {
+        variantId: "SalamiJumbo40cm",
+        variantPrice: "14.50",
+        variantImg: "/assets/img/menuItems/pizza/pizza.jpeg",
+        variantTitle: "Salami",
+        variantContent: "mit Käse (Jumbo 40cm)",
+      },
     ],
   },
   // Döner-Kebap
   {
-    Mealid: "DonerKebabid",
-    MealTitle: "Döner Kebab",
+    Mealid: "DonerKebap",
+    MealTitle: "Döner Kebap",
     Mealicons: "",
     isPopular: true,
+    isSizesAvailable: false,
     MealVariants: [
       {
-        variantId: "dk1",
-        variantPrice: "08.00",
+        variantId: "PortionDrehspießvHahnchen",
+        variantPrice: "06.50",
         variantImg: "/assets/img/menuItems/donerKabab/Döner-Kebap.jpg",
-        variantTitle: "Doner Kabab one",
-        variantContent: "Lorem ipsum has been the industry",
+        variantTitle: "Portion Drehspieß v . Hähnchen",
+        variantContent: "mit Zwiebel",
         badge: {
           variantTitle: "hot",
           color: "#d74a3a",
         },
       },
       {
-        variantId: "dk2",
-        variantPrice: "02.00",
+        variantId: "DrehspießvHahnchenTeller",
+        variantPrice: "07.50",
         variantImg: DonerKebap,
-        variantTitle: "Doner Kabab two",
-        variantContent: "Printing and typesetting industry",
+        variantTitle: "Drehspieß v . Hähnchen Teller",
+        variantContent: "mit Zaziki und Zwiebel",
+        badge: {
+          variantTitle: "new",
+          color: "#70a967",
+        },
       },
       {
-        variantId: "dk3",
-        variantPrice: "04.00",
+        variantId: "DrehspießvHähnchenuberbacken",
+        variantPrice: "09.00",
         variantImg: DonerKebap,
-        variantTitle: "Doner Kabab Three",
-        variantContent: "Ipsum is simply dolor text printing",
+        variantTitle: "Drehspieß v . Hähnchen überbacken",
+        variantContent: "mit Champignons, Zwiebel, Rahmsauce Käse Reis",
+      },
+
+      {
+        variantId: "DrehspießvHahnchen Hawaii",
+        variantPrice: "09.50",
+        variantImg: DonerKebap,
+        variantTitle: "Drehspieß v . Hähnchen Hawaii",
+        variantContent:
+          "mit Dönerfleisch, Ananas, Sahnesauce, Käse überbacken, Reis",
       },
     ],
   },
-  // Meal Thtree
+  // Lasagne
   {
-    Mealid: "MealThreeid",
-    MealTitle: "Meal Three",
+    Mealid: "LasagneId",
+    MealTitle: "Lasagne",
     Mealicons: "",
     isPopular: false,
+    isSizesAvailable: false,
     MealVariants: [
       {
-        variantId: "mtv1id",
-        variantPrice: "15.99",
+        variantId: "LasagneallaForno",
+        variantPrice: "07.50",
         variantImg: "/assets/img/menuItems/mealThree/mealThree.jpg",
-        variantTitle: "Meal three variant one",
-        variantContent: "Lorem ipsum has been the industry",
+        variantTitle: "Lasagne alla Forno",
+        variantContent:
+          "Lmit Hinterschinken Bolognese, Sahnesauce , Käse überbacken",
         badge: {
           variantTitle: "hot",
           color: "#d74a3a",
         },
       },
       {
-        variantId: "mtv2id",
-        variantPrice: "02.00",
+        variantId: "LasagneallaFrido",
+        variantPrice: "09.00",
         variantImg: "/assets/img/menuItems/mealThree/mealThree.jpg",
-        variantTitle: "Meal three variant 2",
-        variantContent: "Printing and typesetting industry",
+        variantTitle: "Lasagne alla Frido",
+        variantContent: "Champ.,Spinat,Lammfl.,Rahms. ,Käse überb",
       },
       {
-        variantId: "mtv3id",
-        variantPrice: "04.00",
+        variantId: "LasagneallaVerde",
+        variantPrice: "08.50",
         variantImg: "/assets/img/menuItems/mealThree/mealThree.jpg",
-        variantTitle: "Meal three variant 3",
-        variantContent: "Ipsum is simply dolor text printing",
-      },
-      {
-        variantId: "mtv4id",
-        variantPrice: "04.00",
-        variantImg: "/assets/img/menuItems/mealThree/mealThree.jpg",
-        variantTitle: "Meal three variant 4",
-        variantContent: "Ipsum is simply dolor text printing",
+        variantTitle: "Lasagne alla Verde",
+        variantContent:
+          "mit Spinat, Broccoli, Hinterschinken , Bolognese, Sahnesauce , Käse überbacken",
       },
     ],
   },

@@ -80,7 +80,7 @@ const Cart = (props) => {
           )}
           {cartHasItems && (
             <Buttons
-              to="/shop/shopping-cart"
+              to="/"
               className="font-medium font-serif uppercase rounded-none lg:mb-[15px] landscape:lg:mb-[15px]"
               themeColor={["#e42564", "#fa6259"]}
               size="sm"
@@ -90,7 +90,7 @@ const Cart = (props) => {
           )}
           {cartHasItems && (
             <Buttons
-              to="/shop/checkout"
+              to="/"
               className="font-medium font-serif uppercase rounded-none lg:mb-[15px] landscape:lg:mb-[15px]"
               themeColor={["#e42564", "#fa6259"]}
               size="sm"

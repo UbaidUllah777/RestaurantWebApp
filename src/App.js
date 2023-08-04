@@ -17,7 +17,11 @@ import CartProvider from "./store/CartProvider";
 import ScrollToTopButton from "./Components/ScrollToTop";
 import FooterStyle01 from "./Components/Footers/FooterStyle01";
 import Cart from "./Components/Cart/Cart";
-import Header, { HeaderNav, Menu } from "./Components/Header/Header";
+import Header, {
+  HeaderNav,
+  Menu,
+  HeaderLanguage,
+} from "./Components/Header/Header";
 import SideButtons from "./Components/SideButtons";
 
 import Privacy from "./Pages/Privacy";
@@ -187,7 +191,9 @@ function App(props) {
                       duration={800}
                     ></ScrollTo>
                   </Col>
+
                   <Col className="col-auto col-lg-2 text-end pe-0 font-size-0">
+                    <HeaderLanguage className="xs:pl-[15px]" />
                     <Cart className="xs:pl-[15px]" />
                   </Col>
                 </HeaderNav>

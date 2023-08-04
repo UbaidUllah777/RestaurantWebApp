@@ -709,6 +709,7 @@ export const HeaderLanguage = (props) => {
       </Link>
       <ul className="dropdown-menu block absolute font-serif left-auto right-0 p-15px rounded-[6px] border-0 m-0 min-w-[140px]">
         <li>
+          {/* ENGLISH */}
           <Link aria-label="link" onClick={((e) => e.preventDefault())} to="#" title="English">
             <span className="icon-country block py-[2px] px-0 text-xs text-[#828282]">
               <img
@@ -725,54 +726,16 @@ export const HeaderLanguage = (props) => {
           <Link aria-label="link" onClick={((e) => e.preventDefault())} to="#" title="England">
             <span className="icon-country block py-[2px] px-0 text-xs text-[#828282]">
               <img
-                src="/assets/img/country-flag-16X16/england.png"
+                src="/assets/img/country-flag-16X16/Germany.png"
                 alt="england"
                 width="16"
                 height="16"
               />
             </span>
-            England
+            Deutsch
           </Link>
         </li>
-        <li>
-          <Link aria-label="link" onClick={((e) => e.preventDefault())} to="#" title="France">
-            <span className="icon-country block py-[2px] px-0 text-xs text-[#828282]">
-              <img
-                src="/assets/img/country-flag-16X16/france.png"
-                alt="france"
-                width="16"
-                height="16"
-              />
-            </span>
-            France
-          </Link>
-        </li>
-        <li>
-          <Link aria-label="link" onClick={((e) => e.preventDefault())} to="#" title="Russian">
-            <span className="icon-country block py-[2px] px-0 text-xs text-[#828282]">
-              <img
-                src="/assets/img/country-flag-16X16/russian.png"
-                alt="russian"
-                width="16"
-                height="16"
-              />
-            </span>
-            Russian
-          </Link>
-        </li>
-        <li>
-          <Link aria-label="link" onClick={((e) => e.preventDefault())} to="#" title="Spain">
-            <span className="icon-country block py-[2px] px-0 text-xs text-[#828282]">
-              <img
-                src="/assets/img/country-flag-16X16/spain.png"
-                alt="spain"
-                width="16"
-                height="16"
-              />
-            </span>
-            Spain
-          </Link>
-        </li>
+        
       </ul>
     </div>
   );

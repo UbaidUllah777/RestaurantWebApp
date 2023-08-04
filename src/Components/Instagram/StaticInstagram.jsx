@@ -3,27 +3,27 @@ import React, { memo, useEffect, useRef, useState } from 'react'
 // Data
 const instaData = [
     {
-        link: "https://www.instagram.com/p/CSMapatMNo8/",
+        link: "https://www.instagram.com",
         img: "https://via.placeholder.com/112x112",
     },
     {
-        link: "https://www.instagram.com/p/CSMapatMNo8/",
+        link: "https://www.instagram.com",
         img: "https://via.placeholder.com/112x112",
     },
     {
-        link: "https://www.instagram.com/p/CSMapatMNo8/",
+        link: "https://www.instagram.com",
         img: "https://via.placeholder.com/112x112",
     },
     {
-        link: "https://www.instagram.com/p/CSMapatMNo8/",
+        link: "https://www.instagram.com",
         img: "https://via.placeholder.com/112x112",
     },
     {
-        link: "https://www.instagram.com/p/CSMapatMNo8/",
+        link: "https://www.instagram.com",
         img: "https://via.placeholder.com/112x112",
     },
     {
-        link: "https://www.instagram.com/p/CSMapatMNo8/",
+        link: "https://www.instagram.com",
         img: "https://via.placeholder.com/112x112",
     }
 ]

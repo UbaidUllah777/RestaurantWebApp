@@ -1,7 +1,7 @@
 import React, { memo } from 'react'
 
 // Libraries
-import { Link } from 'react-router-dom';
+
 import { Col, Container, Row } from 'react-bootstrap';
 import { PropTypes } from "prop-types";
 
@@ -44,8 +44,7 @@ const FooterStyle01 = (props) => {
                             <p className="w-[85%] mb-[15px]">Suraj Bawa, Strernbuschweg 77, (IMO Autowasche) 47057 Duisburg-Neudorf</p>
                             <div><i className="feather-phone-call text-sm mr-[10px] text-themecolor"></i>+49 0203 377770</div>
                             <div><i className="feather-mail text-sm mr-[10px] text-themecolor"></i><a aria-label="mail" href="mailTo:info@surajbawa.com">info@surajbawa.com</a></div>
-                            <SocialIcons size="xs" theme="social-icon-style-01" className="justify-start sm:justify-center  mt-[10px] " iconColor={props.theme === "dark" ? "light" : "dark"} data={iconData} />
-                        </Col>
+                              </Col>
                         <Col lg={3} sm={4}>
                             <span className="mb-[20px] font-medium font-serif text-themecolor block xs:mb-[20px]">Follow Us On Isntagram</span>
                             <div className="w-full inline-block">
@@ -54,7 +53,10 @@ const FooterStyle01 = (props) => {
                                    
                                     
                                 </a>
+                                <SocialIcons size="xs" theme="social-icon-style-01" className="justify-start sm:justify-center  mt-[10px] " iconColor={props.theme === "dark" ? "light" : "dark"} data={iconData} />
+                      
                             </div>
+                            
                         </Col>
                     </Row>
                 </Container>
